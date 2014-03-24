@@ -256,18 +256,98 @@ a {
   border-radius: 15px 15px 0px 0px;
 }
 
-/* line 82, ../_sass/app.scss */
+/* line 79, ../_sass/app.scss */
+.footer {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  padding-bottom: 15px;
+}
+/* line 85, ../_sass/app.scss */
+.footer ul {
+  display: block;
+  margin: 0 auto;
+}
+/* line 89, ../_sass/app.scss */
+.footer ul li {
+  display: inline-block;
+  padding: 3px;
+}
+
+/* line 100, ../_sass/app.scss */
 #hp {
   background-image: url("/img/half-white.png"), url("/img/black.jpg");
   background-size: 91.6%;
   background-repeat: repeat-y;
 }
 
-/* line 92, ../_sass/app.scss */
+/* line 110, ../_sass/app.scss */
 .logo {
   max-width: 75%;
   display: block;
   position: absolute;
-  top: 15%;
+  top: 11%;
   left: 16.7%;
+}
+
+/* line 125, ../_sass/app.scss */
+#details {
+  display: inline;
+  float: left;
+  width: 38.33333%;
+  margin: 0 0.83333%;
+  padding-right: 20px;
+}
+
+/* line 130, ../_sass/app.scss */
+form {
+  display: inline;
+  float: left;
+  width: 38.33333%;
+  margin: 0 0.83333%;
+  background-color: #ddd;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  padding: 10px 15px;
+  font-size: 1.113em;
+  color: #000;
+}
+
+/* line 140, ../_sass/app.scss */
+.field-row {
+  margin: 15px 0px;
+  padding: 15px 0px;
+}
+/* line 144, ../_sass/app.scss */
+.field-row label {
+  display: inline;
+  float: left;
+  width: 31.66667%;
+  margin: 0 0.83333%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 6px;
+}
+/* line 151, ../_sass/app.scss */
+.field-row input, .field-row textarea {
+  display: inline;
+  float: left;
+  width: 45%;
+  margin: 0 0.83333%;
+  vertical-align: middle;
+  width: 225px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  border: solid 1px #ccc;
+}
+/* line 161, ../_sass/app.scss */
+.field-row textarea {
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+
+/* line 167, ../_sass/app.scss */
+#title {
+  border-bottom: 1px solid 333;
 }
