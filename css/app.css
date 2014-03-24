@@ -276,7 +276,7 @@ a {
 
 /* line 100, ../_sass/app.scss */
 #hp {
-  background-image: url("/img/half-white.png"), url("/img/black.jpg");
+  background-image: url("../img/half-white.png"), url("../img/black.jpg");
   background-size: 91.6%;
   background-repeat: repeat-y;
 }
