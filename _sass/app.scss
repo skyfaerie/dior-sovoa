@@ -1,0 +1,99 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "breakpoint";
+@import "grid";
+@import "typography";
+
+////// GENERAL STYLING /////
+/**/
+
+/* element Styles */
+
+body {
+	display: block;
+}
+
+nav {
+
+	text-align: right;
+	li {
+		display: inline-block;
+		padding: 10px;
+	}
+
+	a { color: $white;  }
+}
+
+img  {
+	max-width: 100%;
+}
+
+a { text-decoration: none; }
+
+/* customized styles */
+
+.hp-site {
+	$total-width: 90%;
+	@include row(12);
+	margin: 0 auto;
+}
+
+.site {
+	$total-width: 80%;
+	@include row(12);
+	margin: 0 auto; background-color: #bbb;
+}
+
+
+.content {
+	@include column(12);
+	margin: 0 auto;
+		// background-color: #ddd;
+}
+
+
+////// HOME PAGE SPECIFIC /////
+
+#hp {
+	background-image: url("/img/half-white.png"), url("/img/black.jpg");
+	background-size: 91.6%;
+	background-repeat: repeat-y;
+}
+
+#hp-nav {
+	// margin-left: 12%;
+}
+
+.logo {
+	max-width: 75%;
+	display: block;
+	position: absolute;
+	top: 15%;
+	left: 16.7%;
+}
+
+
+
+////// ABOUT PAGE SPECIFIC /////
+
+
+////// CLIENT PAGE SPECIFIC /////
+
+
+////// MOTION PAGE SPECIFIC /////
+
+
+////// GALLERY PAGE SPECIFIC /////
+
+
+////// CONTACT PAGE SPECIFIC /////
+
+
+////// HOME PAGE SPECIFIC /////
+
+
+
