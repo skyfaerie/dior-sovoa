@@ -169,7 +169,7 @@ p {
 
 /* line 82, ../_sass/typography.scss */
 .content {
-  color: #111111;
+  color: #eeeeee;
 }
 
 /**/
@@ -229,7 +229,6 @@ a {
   margin: 0 -0.83333%;
   *zoom: 1;
   margin: 0 auto;
-  background-color: #bbb;
 }
 /* line 28, ../_sass/grid.scss */
 .site:before, .site:after {
@@ -242,22 +241,35 @@ a {
 }
 
 /* line 52, ../_sass/app.scss */
-.content {
-  display: inline;
-  float: left;
-  width: 78.33333%;
-  margin: 0 0.83333%;
+.hp-content {
   margin: 0 auto;
 }
 
-/* line 61, ../_sass/app.scss */
+/* line 56, ../_sass/app.scss */
+.content {
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0px 20px;
+  background-color: #fff;
+  min-height: 600px;
+  border-radius: 15px 15px 0px 0px;
+  background: #cccccc;
+  background: -moz-linear-gradient(top, #cccccc, black);
+  background: -webkit-linear-gradient(top, #cccccc, black);
+  background: -o-linear-gradient(top, #cccccc, black);
+  background: -ms-linear-gradient(top, #cccccc, black);
+  background: linear-gradient(top, #cccccc, #000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000',GradientType=0);
+}
+
+/* line 77, ../_sass/app.scss */
 #hp {
   background-image: url("/img/half-white.png"), url("/img/black.jpg");
   background-size: 91.6%;
   background-repeat: repeat-y;
 }
 
-/* line 71, ../_sass/app.scss */
+/* line 87, ../_sass/app.scss */
 .logo {
   max-width: 75%;
   display: block;

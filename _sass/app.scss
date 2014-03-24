@@ -45,14 +45,30 @@ a { text-decoration: none; }
 .site {
 	$total-width: 80%;
 	@include row(12);
-	margin: 0 auto; background-color: #bbb;
+	margin: 0 auto;
+	// background-color: #bbb;
 }
 
+.hp-content {
+	margin: 0 auto;
+}
 
 .content {
-	@include column(12);
 	margin: 0 auto;
-		// background-color: #ddd;
+	margin-top: 10px;
+	padding: 0px 20px;
+	background-color: #fff;
+	min-height: 600px;
+	border-radius: 15px 15px 0px 0px;
+
+	background: #cccccc;
+background:-moz-linear-gradient(top, #cccccc, #000000);
+background:-webkit-linear-gradient(top, #cccccc, #000000);
+background:-o-linear-gradient(top, #cccccc, #000000);
+background:-ms-linear-gradient(top, #cccccc, #000000);
+background:linear-gradient(top, #cccccc, #000000);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000',GradientType=0);
+
 }
 
 
