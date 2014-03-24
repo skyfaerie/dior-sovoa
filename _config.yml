@@ -1,3 +1,4 @@
 name: Dior Sovoa
 markdown: redcarpet
 pygments: true
+baseurl: '/dior-sovoa'
