@@ -274,14 +274,38 @@ a {
   padding: 3px;
 }
 
-/* line 100, ../_sass/app.scss */
+/* line 97, ../_sass/app.scss */
+.sm {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url(#greyscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
+/* line 106, ../_sass/app.scss */
+.sm:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url(#greyscale);
+  filter: gray;
+  -webkit-filter: grayscale(0);
+}
+
+/* line 117, ../_sass/app.scss */
 #hp {
   background-image: url("../img/half-white.png"), url("../img/black.jpg");
   background-size: 91.6%;
   background-repeat: repeat-y;
 }
 
-/* line 110, ../_sass/app.scss */
+/* line 127, ../_sass/app.scss */
 .logo {
   max-width: 75%;
   display: block;
@@ -290,7 +314,7 @@ a {
   left: 16.7%;
 }
 
-/* line 125, ../_sass/app.scss */
+/* line 142, ../_sass/app.scss */
 #details {
   display: inline;
   float: left;
@@ -299,7 +323,7 @@ a {
   padding-right: 20px;
 }
 
-/* line 130, ../_sass/app.scss */
+/* line 147, ../_sass/app.scss */
 form {
   display: inline;
   float: left;
@@ -313,12 +337,12 @@ form {
   color: #000;
 }
 
-/* line 140, ../_sass/app.scss */
+/* line 157, ../_sass/app.scss */
 .field-row {
   margin: 15px 0px;
   padding: 15px 0px;
 }
-/* line 144, ../_sass/app.scss */
+/* line 161, ../_sass/app.scss */
 .field-row label {
   display: inline;
   float: left;
@@ -328,7 +352,7 @@ form {
   vertical-align: middle;
   margin-top: 6px;
 }
-/* line 151, ../_sass/app.scss */
+/* line 168, ../_sass/app.scss */
 .field-row input, .field-row textarea {
   display: inline;
   float: left;
@@ -341,13 +365,13 @@ form {
   margin-left: 5px;
   border: solid 1px #ccc;
 }
-/* line 161, ../_sass/app.scss */
+/* line 178, ../_sass/app.scss */
 .field-row textarea {
   min-height: 200px;
   margin-bottom: 10px;
 }
 
-/* line 167, ../_sass/app.scss */
+/* line 184, ../_sass/app.scss */
 #title {
   border-bottom: 1px solid 333;
 }
