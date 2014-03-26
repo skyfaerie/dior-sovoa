@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic");
 /* line 17, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
@@ -68,17 +64,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 42, ../_sass/_grid.scss */
+/* line 42, ../_sass/grid.scss */
 body {
   width: 100%;
   *zoom: 1;
 }
-/* line 28, ../_sass/_grid.scss */
+/* line 28, ../_sass/grid.scss */
 body:before, body:after {
   content: "";
   display: table;
 }
-/* line 32, ../_sass/_grid.scss */
+/* line 32, ../_sass/grid.scss */
 body:after {
   clear: both;
 }
@@ -95,7 +91,7 @@ Bold 700       - Bold 700 Italic
 Extra-Bold 800 - Extra-Bold 800 Italic
 Ultra-Bold 900 - Ultra-Bold 900 Italic
  */
-/* line 21, ../_sass/_typography.scss */
+/* line 21, ../_sass/typography.scss */
 body {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 12pt;
@@ -103,77 +99,178 @@ body {
   background-color: #111111;
 }
 
-/* line 29, ../_sass/_typography.scss */
+/* line 29, ../_sass/typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 500;
 }
 
-/* line 34, ../_sass/_typography.scss */
+/* line 34, ../_sass/typography.scss */
 h1 {
   font-size: 1.963em;
   line-height: 2.618em;
 }
 
-/* line 39, ../_sass/_typography.scss */
+/* line 39, ../_sass/typography.scss */
 h2 {
   font-size: 1.618em;
   line-height: 1.963em;
 }
 
-/* line 44, ../_sass/_typography.scss */
+/* line 44, ../_sass/typography.scss */
 h3 {
   font-size: 1.214em;
   line-height: 1.618em;
 }
 
-/* line 49, ../_sass/_typography.scss */
+/* line 49, ../_sass/typography.scss */
 h4 {
   font-size: 1em;
   line-height: 1.214em;
 }
 
-/* line 54, ../_sass/_typography.scss */
+/* line 54, ../_sass/typography.scss */
 h5 {
   font-size: 0.75em;
   line-height: 1em;
 }
 
-/* line 59, ../_sass/_typography.scss */
+/* line 59, ../_sass/typography.scss */
 h6 {
   font-size: 0.618em;
   line-height: 0.75em;
 }
 
-/* line 64, ../_sass/_typography.scss */
+/* line 64, ../_sass/typography.scss */
 p {
   font-size: 1.1em;
   line-height: 1.214em;
   margin-bottom: 0.618em;
 }
 
-/* line 70, ../_sass/_typography.scss */
+/* line 70, ../_sass/typography.scss */
 .black {
   color: #111111;
 }
 
-/* line 74, ../_sass/_typography.scss */
+/* line 74, ../_sass/typography.scss */
 .white {
   color: #eeeeee;
 }
 
-/* line 78, ../_sass/_typography.scss */
+/* line 78, ../_sass/typography.scss */
 .gray {
   color: #cccccc;
 }
 
-/* line 82, ../_sass/_typography.scss */
+/* line 82, ../_sass/typography.scss */
 .content {
   color: #eeeeee;
 }
 
-/* social media buttons */
-/* line 89, ../_sass/_typography.scss */
+/**/
+/* element Styles */
+/* line 12, ../_sass/base.scss */
+body {
+  display: block;
+}
+
+/* line 16, ../_sass/base.scss */
+nav {
+  text-align: right;
+}
+/* line 19, ../_sass/base.scss */
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+/* line 24, ../_sass/base.scss */
+nav a {
+  color: #eeeeee;
+}
+
+/* line 27, ../_sass/base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 31, ../_sass/base.scss */
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* customized styles */
+/* line 38, ../_sass/base.scss */
+.hp-site {
+  display: block;
+  width: 91.875%;
+  margin: 0 -0.9375%;
+  *zoom: 1;
+  margin: 0 auto;
+}
+/* line 28, ../_sass/grid.scss */
+.hp-site:before, .hp-site:after {
+  content: "";
+  display: table;
+}
+/* line 32, ../_sass/grid.scss */
+.hp-site:after {
+  clear: both;
+}
+
+/* line 44, ../_sass/base.scss */
+.site {
+  display: block;
+  width: 81.66667%;
+  margin: 0 -0.83333%;
+  *zoom: 1;
+  margin: 0 auto;
+}
+/* line 28, ../_sass/grid.scss */
+.site:before, .site:after {
+  content: "";
+  display: table;
+}
+/* line 32, ../_sass/grid.scss */
+.site:after {
+  clear: both;
+}
+
+/* line 51, ../_sass/base.scss */
+.hp-content {
+  margin: 0 auto;
+}
+
+/* line 55, ../_sass/base.scss */
+.content {
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0px 20px;
+  background-color: rgba(2, 2, 2, 0.2);
+  min-height: 600px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+/* line 75, ../_sass/base.scss */
+.footer {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  padding-bottom: 15px;
+}
+/* line 81, ../_sass/base.scss */
+.footer ul {
+  display: block;
+  margin: 0 auto;
+}
+/* line 85, ../_sass/base.scss */
+.footer ul li {
+  display: inline-block;
+  padding: 3px;
+}
+
+/* line 93, ../_sass/base.scss */
 .sm {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -185,7 +282,7 @@ p {
   -webkit-filter: grayscale(1);
 }
 
-/* line 98, ../_sass/_typography.scss */
+/* line 102, ../_sass/base.scss */
 .sm:hover {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -197,115 +294,23 @@ p {
   -webkit-filter: grayscale(0);
 }
 
-/**/
-/* element Styles */
-/* line 12, ../_sass/_base.scss */
-body {
+/* line 113, ../_sass/base.scss */
+#hp {
+  background-image: url("../img/half-white.png"), url("../img/black.jpg");
+  background-size: 91.6%;
+  background-repeat: repeat-y;
+}
+
+/* line 123, ../_sass/base.scss */
+.logo {
+  max-width: 75%;
   display: block;
+  position: absolute;
+  top: 11%;
+  left: 16.7%;
 }
 
-/* line 16, ../_sass/_base.scss */
-nav {
-  text-align: right;
-}
-/* line 19, ../_sass/_base.scss */
-nav li {
-  display: inline-block;
-  padding: 10px;
-}
-/* line 24, ../_sass/_base.scss */
-nav a {
-  color: #eeeeee;
-}
-
-/* line 27, ../_sass/_base.scss */
-img {
-  max-width: 100%;
-}
-
-/* line 31, ../_sass/_base.scss */
-a {
-  text-decoration: none;
-  color: #ccc;
-}
-
-/* line 36, ../_sass/_base.scss */
-a:hover {
-  color: #828282;
-}
-
-/* line 40, ../_sass/_base.scss */
-.footer {
-  display: block;
-  margin: 0 auto;
-  width: 350px;
-  padding-bottom: 15px;
-}
-/* line 46, ../_sass/_base.scss */
-.footer ul {
-  display: block;
-  margin: 0 auto;
-}
-/* line 50, ../_sass/_base.scss */
-.footer ul li {
-  display: inline-block;
-  padding: 3px;
-}
-
-/* homepage customized styles */
-/* line 59, ../_sass/_base.scss */
-.hp-site {
-  display: block;
-  width: 91.875%;
-  margin: 0 -0.9375%;
-  *zoom: 1;
-  margin: 0 auto;
-}
-/* line 28, ../_sass/_grid.scss */
-.hp-site:before, .hp-site:after {
-  content: "";
-  display: table;
-}
-/* line 32, ../_sass/_grid.scss */
-.hp-site:after {
-  clear: both;
-}
-
-/* line 65, ../_sass/_base.scss */
-.hp-content {
-  margin: 0 auto;
-}
-
-/* site customized styles */
-/* line 71, ../_sass/_base.scss */
-.site {
-  display: block;
-  width: 81.66667%;
-  margin: 0 -0.83333%;
-  *zoom: 1;
-  margin: 0 auto;
-}
-/* line 28, ../_sass/_grid.scss */
-.site:before, .site:after {
-  content: "";
-  display: table;
-}
-/* line 32, ../_sass/_grid.scss */
-.site:after {
-  clear: both;
-}
-
-/* line 78, ../_sass/_base.scss */
-.content {
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 0px 20px;
-  background-color: rgba(2, 2, 2, 0.2);
-  min-height: 600px;
-  border-radius: 15px 15px 0px 0px;
-}
-
-/* line 16, ../_sass/app.scss */
+/* line 138, ../_sass/base.scss */
 #details {
   display: inline;
   float: left;
@@ -314,7 +319,7 @@ a:hover {
   padding-right: 20px;
 }
 
-/* line 21, ../_sass/app.scss */
+/* line 143, ../_sass/base.scss */
 form {
   display: inline;
   float: left;
@@ -328,12 +333,12 @@ form {
   color: #000;
 }
 
-/* line 31, ../_sass/app.scss */
+/* line 153, ../_sass/base.scss */
 .field-row {
   margin: 15px 0px;
   padding: 15px 0px;
 }
-/* line 35, ../_sass/app.scss */
+/* line 157, ../_sass/base.scss */
 .field-row label {
   display: inline;
   float: left;
@@ -343,7 +348,7 @@ form {
   vertical-align: middle;
   margin-top: 6px;
 }
-/* line 42, ../_sass/app.scss */
+/* line 164, ../_sass/base.scss */
 .field-row input, .field-row textarea {
   display: inline;
   float: left;
@@ -356,13 +361,13 @@ form {
   margin-left: 5px;
   border: solid 1px #ccc;
 }
-/* line 52, ../_sass/app.scss */
+/* line 174, ../_sass/base.scss */
 .field-row textarea {
   min-height: 200px;
   margin-bottom: 10px;
 }
 
-/* line 58, ../_sass/app.scss */
+/* line 180, ../_sass/base.scss */
 #title {
   border-bottom: 1px solid 333;
 }

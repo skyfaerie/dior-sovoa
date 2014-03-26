@@ -1,0 +1,88 @@
+
+@import "compass/reset";
+@import "breakpoint";
+@import "grid";
+@import "typography";
+
+////// GENERAL STYLING /////
+/**/
+
+/* element Styles */
+
+body {
+	display: block;
+}
+
+nav {
+
+	text-align: right;
+	li {
+		display: inline-block;
+		padding: 10px;
+	}
+
+	a { color: $white;  }
+}
+
+img  {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+a:hover {
+	color: #828282;
+}
+
+.footer {
+	display: block;
+	margin: 0 auto;
+	width: 350px;
+	padding-bottom: 15px;
+
+	ul  {
+		display: block;
+		margin: 0 auto;
+
+		li {
+			display: inline-block;
+			padding: 3px;
+		}
+	}
+}
+
+/* homepage customized styles */
+
+.hp-site {
+	$total-width: 90%;
+	@include row(12);
+	margin: 0 auto;
+}
+
+.hp-content {
+	margin: 0 auto;
+}
+
+/* site customized styles */
+
+.site {
+	$total-width: 80%;
+	@include row(12);
+	margin: 0 auto;
+	// background-color: #bbb;
+}
+
+.content {
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 0px 20px;
+	// background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(2, 2, 2, 0.2);
+
+	min-height: 600px;
+	border-radius: 15px 15px 0px 0px;
+}
+

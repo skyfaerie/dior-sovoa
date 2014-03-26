@@ -1,0 +1,25 @@
+@import "base";
+
+////// HOME PAGE SPECIFIC /////
+
+#hp {
+	background-image: url("../img/half-white.png"), url("../img/black.jpg");
+	background-size: 91.6%;
+	background-repeat: repeat-y;
+}
+
+#hp-nav {
+	// margin-left: 12%;
+}
+
+.logo {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 9.2%;
+  bottom: 0;
+  right: 0;
+  max-width: 85%;
+}
+
+
