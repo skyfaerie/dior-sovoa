@@ -178,7 +178,7 @@ p {
   -webkit-filter: grayscale(0);
 }
 
-/* line 9, ../_sass/home.scss */
+/* line 6, ../_sass/home.scss */
 body {
   width: 100%;
   height: 100%;
@@ -187,27 +187,27 @@ body {
   background-repeat: repeat-y;
 }
 
-/* line 17, ../_sass/home.scss */
+/* line 14, ../_sass/home.scss */
 header {
   display: block;
   margin: 0 auto;
   margin-left: -3px;
 }
 
-/* line 23, ../_sass/home.scss */
+/* line 20, ../_sass/home.scss */
 a {
   text-decoration: none;
   color: #cccccc;
 }
 
-/* line 28, ../_sass/home.scss */
+/* line 25, ../_sass/home.scss */
 a:hover {
   background-color: #8c8c8c;
   color: #eeeeee;
   padding: 5px;
 }
 
-/* line 34, ../_sass/home.scss */
+/* line 31, ../_sass/home.scss */
 nav {
   display: block;
   padding: 10px 0px;
@@ -216,24 +216,24 @@ nav {
   position: relative;
 }
 
-/* line 43, ../_sass/home.scss */
+/* line 40, ../_sass/home.scss */
 ul {
   display: block;
 }
-/* line 46, ../_sass/home.scss */
+/* line 43, ../_sass/home.scss */
 ul li {
   display: inline-block;
   padding: 0px 10px;
 }
 
-/* line 52, ../_sass/home.scss */
+/* line 49, ../_sass/home.scss */
 .wrapper {
   width: 100%;
   height: inherit;
 }
 
 /* homepage customized styles */
-/* line 59, ../_sass/home.scss */
+/* line 56, ../_sass/home.scss */
 .content {
   margin: 0 auto;
 }
@@ -242,7 +242,7 @@ ul li {
 vertically centering image:
 http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/
 */
-/* line 69, ../_sass/home.scss */
+/* line 65, ../_sass/home.scss */
 .logo {
   display: block;
   margin: 0 auto;
@@ -261,18 +261,18 @@ queries from bootstarap
 
 */
 @media (min-width: 735px) and (max-width: 1185px) {
-  /* line 95, ../_sass/home.scss */
+  /* line 85, ../_sass/home.scss */
   .logo {
     padding-top: 10%;
   }
 
-  /* line 97, ../_sass/home.scss */
+  /* line 87, ../_sass/home.scss */
   nav {
     background-color: #111111;
     width: 100%;
   }
 
-  /* line 103, ../_sass/home.scss */
+  /* line 92, ../_sass/home.scss */
   ul {
     margin: 0 auto;
     display: block;
@@ -281,12 +281,12 @@ queries from bootstarap
   }
 }
 @media (max-width: 734px) {
-  /* line 113, ../_sass/home.scss */
+  /* line 102, ../_sass/home.scss */
   .logo {
     padding-top: 10%;
   }
 
-  /* line 115, ../_sass/home.scss */
+  /* line 104, ../_sass/home.scss */
   nav {
     display: block;
     width: 100%;
@@ -294,20 +294,20 @@ queries from bootstarap
     margin: 0;
   }
 
-  /* line 122, ../_sass/home.scss */
+  /* line 111, ../_sass/home.scss */
   ul {
     margin: 0 auto;
     text-align: center;
     min-width: 100%;
   }
-  /* line 127, ../_sass/home.scss */
+  /* line 116, ../_sass/home.scss */
   ul li {
     display: block;
     border-bottom: 1px solid #eeeeee;
     padding: 10px 15px;
     background-color: #111111;
   }
-  /* line 134, ../_sass/home.scss */
+  /* line 123, ../_sass/home.scss */
   ul a:hover {
     background-color: transparent;
   }
