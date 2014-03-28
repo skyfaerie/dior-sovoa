@@ -1,17 +1,63 @@
-@import "base";
+@import "compass/reset";
+// @import "grid";
+// @import "breakpoint";
+@import "typography";
+
 
 ////// HOME PAGE SPECIFIC /////
 
-#hp {
+body {
+  width: 100%;
+  height: 100%;
 	background-image: url("../img/half-white.png"), url("../img/black.jpg");
 	background-size: 91.6%;
 	background-repeat: repeat-y;
 }
 
-#hp-nav {
-	// margin-left: 12%;
-  @include column(15.78);
-  // background-color: blue;
+header {
+  display: block;
+  margin: 0 auto;
+  margin-left: -3px;
+}
+
+a {
+  text-decoration: none;
+  color: $gray;
+}
+
+a:hover {
+  background-color: darken($gray, 25%);
+  color: $white;
+  padding: 5px;
+}
+
+nav {
+  // background-color: #555;
+  display: block;
+  padding: 10px 0px;
+  float: right;
+  padding-right: 15px;
+  position: relative;
+}
+
+ul {
+  display: block;
+
+  li {
+    display: inline-block;
+    padding: 0px 10px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  height: inherit;
+}
+/* homepage customized styles */
+
+
+.content {
+  margin: 0 auto;
 }
 
 
@@ -21,14 +67,81 @@ http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-cente
 */
 
 .logo {
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 9.2%;
-  bottom: 0;
-  right: 0;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  // position: absolute;
+  // top: 0;
+  // left: 9.2%;
+  // bottom: 0;
+  // right: 0;
   max-width: 85%;
+  margin-left: 12.2%;
+  padding-top: 3%;
 }
+
+/*
+
+queries from bootstarap
+@media (min-width:992px)
+@media (max-width:991px) and (min-width: 768px)
+@media screen and (max-width: 768px)
+
+*/
+
+
+@media (min-width:735px) and (max-width: 1185px){
+
+  .logo { padding-top: 10%; }
+
+  nav {
+    background-color: $black;
+    width: 100%;
+
+  }
+
+  ul {
+    margin: 0 auto;
+    display: block;
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+@media(max-width:734px){
+
+  .logo { padding-top: 10%; }
+
+  nav {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul {
+    margin: 0 auto;
+    text-align: center;
+    min-width: 100%;
+
+    li{
+      display: block;
+      border-bottom: 1px solid $white;
+      padding: 10px 15px;
+      background-color: $black;
+    }
+
+    a:hover{
+      background-color: transparent;
+    }
+  }
+}
+
+////// NAVBAR SPECIFIC /////
+
+/* nav {
+  background-color: #555;
+} */
 
 
 /*
@@ -36,104 +149,119 @@ responsive nav bar:
 base source code: http://www.hongkiat.com/blog/responsive-web-nav/
  */
 
+// /* Clearfix */
+// .clearfix:before,
+// .clearfix:after {
+//     content: " ";
+//     display: table;
+// }
+// .clearfix:after {
+//     clear: both;
+// }
+// .clearfix {
+//     *zoom: 1;
+// }
 
+// /* Basic Styles */
+// body {
+//   background-color: #ece8e5;
+// }
+// nav {
+//   height: 40px;
+//   width: 100%;
+//   background: #455868;
+//   font-size: 11pt;
+//   font-family: 'PT Sans', Arial, sans-serif;
+//   font-weight: bold;
+//   position: relative;
+//   border-bottom: 2px solid #283744;
+// }
+// nav ul {
+//   padding: 0;
+//   margin: 0 auto;
+//   /*width: 600px;*/
+//   height: 40px;
+//   float: right;
+// }
+// nav li {
+//   display: inline;
+//   float: left;
+// }
+// nav a {
+//   color: #fff;
+//   display: inline-block;
+//   width: 100px;
+//   text-align: center;
+//   text-decoration: none;
+//   line-height: 40px;
+//   text-shadow: 1px 1px 0px #283744;
+// }
 
-nav {
-  height: 40px;
-  width: 100%;
-  background: #455868;
-  font-size: 11pt;
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-weight: bold;
-  position: relative;
-  border-bottom: 2px solid #283744;
-}
-nav ul {
-  padding: 0;
-  margin: 0 auto;
-  /*width: 600px;*/
-  height: 40px;
-  float: right;
-}
-nav li {
-  display: inline;
-  float: left;
-}
-nav a {
-  color: #fff;
-  display: inline-block;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 40px;
-  text-shadow: 1px 1px 0px #283744;
-}
+// nav a#pull {
+//   display: none;
+// }
 
-nav a#pull {
-  display: none;
-}
+// /*Styles for screen 600px and lower*/
+// @media screen and (max-width: 600px) {
+//   nav {
+//       height: auto;
+//     }
+//     nav ul {
+//       width: 100%;
+//       display: block;
+//       height: auto;
+//     }
+//     nav li {
+//       width: 50%;
+//       float: left;
+//       position: relative;
+//     }
+//     nav li a {
+//     border-bottom: 1px solid #576979;
+//     border-right: 1px solid #576979;
+//   }
+//     nav a {
+//       text-align: left;
+//       width: 100%;
+//       text-indent: 25px;
+//     }
+// }
 
-/*Styles for screen 600px and lower*/
-@media screen and (max-width: 600px) {
-  nav {
-      height: auto;
-    }
-    nav ul {
-      width: 100%;
-      display: block;
-      height: auto;
-    }
-    nav li {
-      width: 50%;
-      float: left;
-      position: relative;
-    }
-    nav li a {
-    border-bottom: 1px solid #576979;
-    border-right: 1px solid #576979;
-  }
-    nav a {
-      text-align: left;
-      width: 100%;
-      text-indent: 25px;
-    }
-}
+// /*Styles for screen 515px and lower*/
+// @media only screen and (max-width : 480px) {
+//   nav {
+//     border-bottom: 0;
+//   }
+//   nav ul {
+//     display: none;
+//     height: auto;
+//   }
+//   nav a#pull {
+//     display: block;
+//     background-color: #283744;
+//     width: 100%;
+//     position: relative;
+//   }
+//   nav a#pull:after {
+//     content:"";
+//     background: url('nav-icon.png') no-repeat;
+//     width: 30px;
+//     height: 30px;
+//     display: inline-block;
+//     position: absolute;
+//     right: 15px;
+//     top: 10px;
+//   }
+// }
 
-/*Styles for screen 515px and lower*/
-@media only screen and (max-width : 480px) {
-  nav {
-    border-bottom: 0;
-  }
-  nav ul {
-    display: none;
-    height: auto;
-  }
-  nav a#pull {
-    display: block;
-    background-color: #283744;
-    width: 100%;
-    position: relative;
-  }
-  nav a#pull:after {
-    content:"";
-    background: url('../img/nav-icon.png') no-repeat;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
-}
-
-/*Smartphone*/
-@media only screen and (max-width : 320px) {
-  nav li {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-  nav li a {
-    border-bottom: 1px solid #576979;
-  }
-}
+// /*Smartphone*/
+// @media only screen and (max-width : 320px) {
+//   nav li {
+//     display: block;
+//     float: none;
+//     width: 100%;
+//   }
+//   nav li a {
+//     border-bottom: 1px solid #576979;
+//   }
+// }

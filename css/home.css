@@ -64,21 +64,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 42, ../_sass/_grid.scss */
-body {
-  width: 100%;
-  *zoom: 1;
-}
-/* line 28, ../_sass/_grid.scss */
-body:before, body:after {
-  content: "";
-  display: table;
-}
-/* line 32, ../_sass/_grid.scss */
-body:after {
-  clear: both;
-}
-
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
@@ -193,269 +178,144 @@ p {
   -webkit-filter: grayscale(0);
 }
 
-/**/
-/* element Styles */
-/* line 12, ../_sass/_base.scss */
+/* line 9, ../_sass/home.scss */
 body {
-  display: block;
-}
-
-/* line 16, ../_sass/_base.scss */
-nav {
-  text-align: right;
-}
-/* line 19, ../_sass/_base.scss */
-nav li {
-  display: inline-block;
-  padding: 10px;
-}
-/* line 24, ../_sass/_base.scss */
-nav a {
-  color: #eeeeee;
-}
-
-/* line 27, ../_sass/_base.scss */
-img {
-  max-width: 100%;
-}
-
-/* line 31, ../_sass/_base.scss */
-a {
-  text-decoration: none;
-  color: #ccc;
-}
-
-/* line 36, ../_sass/_base.scss */
-a:hover {
-  color: #828282;
-}
-
-/* line 40, ../_sass/_base.scss */
-.footer {
-  display: block;
-  margin: 0 auto;
-  width: 350px;
-  padding-bottom: 15px;
-}
-/* line 46, ../_sass/_base.scss */
-.footer ul {
-  display: block;
-  margin: 0 auto;
-}
-/* line 50, ../_sass/_base.scss */
-.footer ul li {
-  display: inline-block;
-  padding: 3px;
-}
-
-/* homepage customized styles */
-/* line 59, ../_sass/_base.scss */
-.hp-site {
-  display: block;
-  width: 91.875%;
-  margin: 0 -0.9375%;
-  *zoom: 1;
-  margin: 0 auto;
-}
-/* line 28, ../_sass/_grid.scss */
-.hp-site:before, .hp-site:after {
-  content: "";
-  display: table;
-}
-/* line 32, ../_sass/_grid.scss */
-.hp-site:after {
-  clear: both;
-}
-
-/* line 65, ../_sass/_base.scss */
-.hp-content {
-  margin: 0 auto;
-}
-
-/* site customized styles */
-/* line 71, ../_sass/_base.scss */
-.site {
-  display: block;
-  width: 81.66667%;
-  margin: 0 -0.83333%;
-  *zoom: 1;
-  margin: 0 auto;
-}
-/* line 28, ../_sass/_grid.scss */
-.site:before, .site:after {
-  content: "";
-  display: table;
-}
-/* line 32, ../_sass/_grid.scss */
-.site:after {
-  clear: both;
-}
-
-/* line 78, ../_sass/_base.scss */
-.content {
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 0px 20px;
-  background-color: rgba(2, 2, 2, 0.2);
-  min-height: 600px;
-  border-radius: 15px 15px 0px 0px;
-}
-
-/* line 5, ../_sass/home.scss */
-#hp {
+  width: 100%;
+  height: 100%;
   background-image: url("../img/half-white.png"), url("../img/black.jpg");
   background-size: 91.6%;
   background-repeat: repeat-y;
 }
 
-/* line 11, ../_sass/home.scss */
-#hp-nav {
-  display: inline;
-  float: left;
-  width: 103.53333%;
-  margin: 0 0.83333%;
+/* line 17, ../_sass/home.scss */
+header {
+  display: block;
+  margin: 0 auto;
+  margin-left: -3px;
+}
+
+/* line 23, ../_sass/home.scss */
+a {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+/* line 28, ../_sass/home.scss */
+a:hover {
+  background-color: #8c8c8c;
+  color: #eeeeee;
+  padding: 5px;
+}
+
+/* line 34, ../_sass/home.scss */
+nav {
+  display: block;
+  padding: 10px 0px;
+  float: right;
+  padding-right: 15px;
+  position: relative;
+}
+
+/* line 43, ../_sass/home.scss */
+ul {
+  display: block;
+}
+/* line 46, ../_sass/home.scss */
+ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+/* line 52, ../_sass/home.scss */
+.wrapper {
+  width: 100%;
+  height: inherit;
+}
+
+/* homepage customized styles */
+/* line 59, ../_sass/home.scss */
+.content {
+  margin: 0 auto;
 }
 
 /*
 vertically centering image:
 http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/
 */
-/* line 23, ../_sass/home.scss */
+/* line 69, ../_sass/home.scss */
 .logo {
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 9.2%;
-  bottom: 0;
-  right: 0;
+  display: block;
+  margin: 0 auto;
+  position: relative;
   max-width: 85%;
+  margin-left: 12.2%;
+  padding-top: 3%;
 }
 
+/*
+
+queries from bootstarap
+@media (min-width:992px)
+@media (max-width:991px) and (min-width: 768px)
+@media screen and (max-width: 768px)
+
+*/
+@media (min-width: 735px) and (max-width: 1185px) {
+  /* line 95, ../_sass/home.scss */
+  .logo {
+    padding-top: 10%;
+  }
+
+  /* line 97, ../_sass/home.scss */
+  nav {
+    background-color: #111111;
+    width: 100%;
+  }
+
+  /* line 103, ../_sass/home.scss */
+  ul {
+    margin: 0 auto;
+    display: block;
+    max-width: 90%;
+    text-align: center;
+  }
+}
+@media (max-width: 734px) {
+  /* line 113, ../_sass/home.scss */
+  .logo {
+    padding-top: 10%;
+  }
+
+  /* line 115, ../_sass/home.scss */
+  nav {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 122, ../_sass/home.scss */
+  ul {
+    margin: 0 auto;
+    text-align: center;
+    min-width: 100%;
+  }
+  /* line 127, ../_sass/home.scss */
+  ul li {
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 15px;
+    background-color: #111111;
+  }
+  /* line 134, ../_sass/home.scss */
+  ul a:hover {
+    background-color: transparent;
+  }
+}
+/* nav {
+  background-color: #555;
+} */
 /*
 responsive nav bar:
 base source code: http://www.hongkiat.com/blog/responsive-web-nav/
  */
-/* line 41, ../_sass/home.scss */
-nav {
-  height: 40px;
-  width: 100%;
-  background: #455868;
-  font-size: 11pt;
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-weight: bold;
-  position: relative;
-  border-bottom: 2px solid #283744;
-}
-
-/* line 51, ../_sass/home.scss */
-nav ul {
-  padding: 0;
-  margin: 0 auto;
-  /*width: 600px;*/
-  height: 40px;
-  float: right;
-}
-
-/* line 58, ../_sass/home.scss */
-nav li {
-  display: inline;
-  float: left;
-}
-
-/* line 62, ../_sass/home.scss */
-nav a {
-  color: #fff;
-  display: inline-block;
-  width: 70px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 40px;
-  text-shadow: 1px 1px 0px #283744;
-}
-
-/* line 72, ../_sass/home.scss */
-nav a#pull {
-  display: none;
-}
-
-/*Styles for screen 600px and lower*/
-@media screen and (max-width: 600px) {
-  /* line 78, ../_sass/home.scss */
-  nav {
-    height: auto;
-  }
-
-  /* line 81, ../_sass/home.scss */
-  nav ul {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
-
-  /* line 86, ../_sass/home.scss */
-  nav li {
-    width: 50%;
-    float: left;
-    position: relative;
-  }
-
-  /* line 91, ../_sass/home.scss */
-  nav li a {
-    border-bottom: 1px solid #576979;
-    border-right: 1px solid #576979;
-  }
-
-  /* line 95, ../_sass/home.scss */
-  nav a {
-    text-align: left;
-    width: 100%;
-    text-indent: 25px;
-  }
-}
-/*Styles for screen 515px and lower*/
-@media only screen and (max-width: 480px) {
-  /* line 104, ../_sass/home.scss */
-  nav {
-    border-bottom: 0;
-  }
-
-  /* line 107, ../_sass/home.scss */
-  nav ul {
-    display: none;
-    height: auto;
-  }
-
-  /* line 111, ../_sass/home.scss */
-  nav a#pull {
-    display: block;
-    background-color: #283744;
-    width: 100%;
-    position: relative;
-  }
-
-  /* line 117, ../_sass/home.scss */
-  nav a#pull:after {
-    content: "";
-    background: url("../img/nav-icon.png") no-repeat;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
-}
-/*Smartphone*/
-@media only screen and (max-width: 320px) {
-  /* line 131, ../_sass/home.scss */
-  nav li {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-
-  /* line 136, ../_sass/home.scss */
-  nav li a {
-    border-bottom: 1px solid #576979;
-  }
-}

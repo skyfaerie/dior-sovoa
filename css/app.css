@@ -252,32 +252,8 @@ a:hover {
   padding: 3px;
 }
 
-/* homepage customized styles */
-/* line 59, ../_sass/_base.scss */
-.hp-site {
-  display: block;
-  width: 91.875%;
-  margin: 0 -0.9375%;
-  *zoom: 1;
-  margin: 0 auto;
-}
-/* line 28, ../_sass/_grid.scss */
-.hp-site:before, .hp-site:after {
-  content: "";
-  display: table;
-}
-/* line 32, ../_sass/_grid.scss */
-.hp-site:after {
-  clear: both;
-}
-
-/* line 65, ../_sass/_base.scss */
-.hp-content {
-  margin: 0 auto;
-}
-
 /* site customized styles */
-/* line 71, ../_sass/_base.scss */
+/* line 59, ../_sass/_base.scss */
 .site {
   display: block;
   width: 81.66667%;
@@ -295,7 +271,7 @@ a:hover {
   clear: both;
 }
 
-/* line 78, ../_sass/_base.scss */
+/* line 66, ../_sass/_base.scss */
 .content {
   margin: 0 auto;
   margin-top: 10px;
