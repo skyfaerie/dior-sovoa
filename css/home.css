@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,400italic,500italic,700italic");
+@import url("http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,400italic,500italic,700italic");
 /* line 17, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -211,6 +212,285 @@ nav a:hover {
   -webkit-filter: grayscale(0);
 }
 
+/* line 17, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 42, ../_sass/_grid.scss */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 28, ../_sass/_grid.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 32, ../_sass/_grid.scss */
+body:after {
+  clear: both;
+}
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/*
+Thin 100       - Thin 100 Italic
+Light 300      - Light 300 Italic
+Normal 400     - Normal 400 Italic
+Medium 500     - Medium 500 Italic
+Bold 700       - Bold 700 Italic
+Extra-Bold 800 - Extra-Bold 800 Italic
+Ultra-Bold 900 - Ultra-Bold 900 Italic
+ */
+/* line 21, ../_sass/_typography.scss */
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 12pt;
+  color: #111111;
+  background-color: #fff;
+}
+
+/* line 29, ../_sass/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 500;
+}
+
+/* line 34, ../_sass/_typography.scss */
+h1 {
+  font-size: 1.963em;
+  line-height: 2.618em;
+}
+
+/* line 39, ../_sass/_typography.scss */
+h2 {
+  font-size: 1.618em;
+  line-height: 1.963em;
+}
+
+/* line 44, ../_sass/_typography.scss */
+h3 {
+  font-size: 1.214em;
+  line-height: 1.618em;
+}
+
+/* line 49, ../_sass/_typography.scss */
+h4 {
+  font-size: 1em;
+  line-height: 1.214em;
+}
+
+/* line 54, ../_sass/_typography.scss */
+h5 {
+  font-size: 0.75em;
+  line-height: 1em;
+}
+
+/* line 59, ../_sass/_typography.scss */
+h6 {
+  font-size: 0.618em;
+  line-height: 0.75em;
+}
+
+/* line 64, ../_sass/_typography.scss */
+p {
+  font-size: 1.1em;
+  line-height: 1.214em;
+  margin-bottom: 0.618em;
+}
+
+/* custom classes  */
+/* line 72, ../_sass/_typography.scss */
+.black {
+  color: #111111;
+}
+
+/* line 76, ../_sass/_typography.scss */
+.white {
+  color: #eeeeee;
+}
+
+/* line 80, ../_sass/_typography.scss */
+.gray {
+  color: #cccccc;
+}
+
+/* line 84, ../_sass/_typography.scss */
+.content {
+  color: #111111;
+}
+
+/* element styling  */
+/* line 91, ../_sass/_typography.scss */
+header {
+  background-color: #111111;
+}
+
+/* line 93, ../_sass/_typography.scss */
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* line 98, ../_sass/_typography.scss */
+a:hover {
+  color: #828282;
+}
+
+/* navbar */
+/* line 105, ../_sass/_typography.scss */
+nav a {
+  text-align: center;
+  text-decoration: none;
+  color: #cccccc;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #111111;
+}
+/* line 113, ../_sass/_typography.scss */
+nav a:hover {
+  background-color: #8c8c8c;
+  color: #eeeeee;
+}
+
+/* line 120, ../_sass/_typography.scss */
+#menu {
+  font-size: 2em;
+  color: #cccccc;
+  text-align: right;
+}
+
+/* footer / social media buttons */
+/* line 128, ../_sass/_typography.scss */
+.sm {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url(#greyscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
+/* line 139, ../_sass/_typography.scss */
+.sm:hover {
+  -webkit-filter: grayscale(0);
+}
+
+/* element Styles */
+/* line 11, ../_sass/_base.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, ../_sass/_base.scss */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 21, ../_sass/_base.scss */
+nav {
+  display: none;
+}
+/* line 24, ../_sass/_base.scss */
+nav a {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+/* line 31, ../_sass/_base.scss */
+header {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 39, ../_sass/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 43, ../_sass/_base.scss */
+.footer {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+}
+/* line 48, ../_sass/_base.scss */
+.footer ul {
+  display: block;
+  margin: 0 auto;
+}
+/* line 52, ../_sass/_base.scss */
+.footer ul li {
+  display: inline-block;
+  padding: 3px;
+}
+
 /***********queries from bootstrap ***************
   @media (min-width:992px)
   @media (max-width:991px) and (min-width: 768px)
@@ -227,27 +507,42 @@ body {
 }
 
 /* line 22, ../_sass/home.scss */
-nav {
-  display: none;
-}
-/* line 24, ../_sass/home.scss */
-nav a {
+#menu {
   display: block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: #cccccc;
-  padding: 10px 15px;
-  border-bottom: 1px solid #eeeeee;
-  background-color: #111111;
-}
-/* line 35, ../_sass/home.scss */
-nav a:hover {
-  background-color: #8c8c8c;
-  color: #eeeeee;
+  padding: 5px 25px;
 }
 
-/* line 41, ../_sass/home.scss */
+/* line 27, ../_sass/home.scss */
+header {
+  background: transparent;
+}
+
+@media (min-width: 768px) {
+  /* line 30, ../_sass/home.scss */
+  nav {
+    display: block;
+    padding: 10px 5px;
+  }
+  /* line 34, ../_sass/home.scss */
+  nav a {
+    width: auto;
+    display: inline-block;
+    border-bottom: none;
+    background: transparent;
+    text-align: left;
+  }
+
+  /* line 43, ../_sass/home.scss */
+  .logo {
+    top: 10%;
+  }
+
+  /* line 47, ../_sass/home.scss */
+  #menu {
+    display: none;
+  }
+}
+/* line 52, ../_sass/home.scss */
 .logo {
   margin: auto;
   position: absolute;
@@ -257,32 +552,4 @@ nav a:hover {
   right: 0;
   max-width: 85%;
   z-index: -1;
-}
-
-@media (min-width: 768px) {
-  /* line 53, ../_sass/home.scss */
-  nav {
-    display: block;
-    padding: 10px 5px;
-  }
-  /* line 56, ../_sass/home.scss */
-  nav a {
-    width: auto;
-    display: inline-block;
-    border-bottom: none;
-    background: transparent;
-    text-align: left;
-  }
-
-  /* line 65, ../_sass/home.scss */
-  .logo {
-    top: 10%;
-  }
-}
-/* line 71, ../_sass/home.scss */
-#menu {
-  float: right;
-  padding: 5px;
-  display: inline;
-  font-size: 2em;
 }
