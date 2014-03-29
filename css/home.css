@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic");
+@import url("http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,400italic,500italic,700italic");
 /* line 17, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -178,144 +178,78 @@ p {
   -webkit-filter: grayscale(0);
 }
 
-/* line 6, ../_sass/home.scss */
+/***********queries from bootstrap ***************
+  @media (min-width:992px)
+  @media (max-width:991px) and (min-width: 768px)
+  @media screen and (max-width: 768px)
+**************************************************/
+/* line 13, ../_sass/home.scss */
 body {
+  display: inline-block;
   width: 100%;
   height: 100%;
   background-image: url("../img/half-white.png"), url("../img/black.jpg");
-  background-size: 91.6%;
+  background-size: 100%;
   background-repeat: repeat-y;
 }
 
-/* line 14, ../_sass/home.scss */
-header {
-  display: block;
-  margin: 0 auto;
-  margin-left: -3px;
+/* line 22, ../_sass/home.scss */
+nav {
+  display: none;
 }
-
-/* line 20, ../_sass/home.scss */
-a {
+/* line 24, ../_sass/home.scss */
+nav a {
+  display: block;
+  width: 100%;
+  text-align: center;
   text-decoration: none;
   color: #cccccc;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #111111;
 }
-
-/* line 25, ../_sass/home.scss */
-a:hover {
+/* line 35, ../_sass/home.scss */
+nav a:hover {
   background-color: #8c8c8c;
   color: #eeeeee;
-  padding: 5px;
 }
 
-/* line 31, ../_sass/home.scss */
-nav {
-  display: block;
-  padding: 10px 0px;
-  float: right;
-  padding-right: 15px;
-  position: relative;
-}
-
-/* line 40, ../_sass/home.scss */
-ul {
-  display: block;
-}
-/* line 43, ../_sass/home.scss */
-ul li {
-  display: inline-block;
-  padding: 0px 10px;
-}
-
-/* line 49, ../_sass/home.scss */
-.wrapper {
-  width: 100%;
-  height: inherit;
-}
-
-/* homepage customized styles */
-/* line 56, ../_sass/home.scss */
-.content {
-  margin: 0 auto;
-}
-
-/*
-vertically centering image:
-http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/
-*/
-/* line 65, ../_sass/home.scss */
+/* line 41, ../_sass/home.scss */
 .logo {
-  display: block;
-  margin: 0 auto;
-  position: relative;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 8.6%;
+  bottom: 0;
+  right: 0;
   max-width: 85%;
-  margin-left: 12.2%;
-  padding-top: 3%;
+  z-index: -1;
 }
 
-/*
-
-queries from bootstarap
-@media (min-width:992px)
-@media (max-width:991px) and (min-width: 768px)
-@media screen and (max-width: 768px)
-
-*/
-@media (min-width: 735px) and (max-width: 1185px) {
-  /* line 85, ../_sass/home.scss */
-  .logo {
-    padding-top: 10%;
-  }
-
-  /* line 87, ../_sass/home.scss */
-  nav {
-    background-color: #111111;
-    width: 100%;
-  }
-
-  /* line 92, ../_sass/home.scss */
-  ul {
-    margin: 0 auto;
-    display: block;
-    max-width: 90%;
-    text-align: center;
-  }
-}
-@media (max-width: 734px) {
-  /* line 102, ../_sass/home.scss */
-  .logo {
-    padding-top: 10%;
-  }
-
-  /* line 104, ../_sass/home.scss */
+@media (min-width: 768px) {
+  /* line 53, ../_sass/home.scss */
   nav {
     display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 10px 5px;
+  }
+  /* line 56, ../_sass/home.scss */
+  nav a {
+    width: auto;
+    display: inline-block;
+    border-bottom: none;
+    background: transparent;
+    text-align: left;
   }
 
-  /* line 111, ../_sass/home.scss */
-  ul {
-    margin: 0 auto;
-    text-align: center;
-    min-width: 100%;
-  }
-  /* line 116, ../_sass/home.scss */
-  ul li {
-    display: block;
-    border-bottom: 1px solid #eeeeee;
-    padding: 10px 15px;
-    background-color: #111111;
-  }
-  /* line 123, ../_sass/home.scss */
-  ul a:hover {
-    background-color: transparent;
+  /* line 65, ../_sass/home.scss */
+  .logo {
+    top: 10%;
   }
 }
-/* nav {
-  background-color: #555;
-} */
-/*
-responsive nav bar:
-base source code: http://www.hongkiat.com/blog/responsive-web-nav/
- */
+/* line 71, ../_sass/home.scss */
+#menu {
+  float: right;
+  padding: 5px;
+  display: inline;
+  font-size: 2em;
+}

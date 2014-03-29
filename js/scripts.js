@@ -2,20 +2,14 @@
 /* RESPONSIVE NAV
 /**************************************/
 
-$(function() {
-  var pull    = $('#pull');
-  menu        = $('nav ul');
-  menuHeight  = menu.height();
-
-  $(pull).on('click', function(e) {
-    e.preventDefault();
-    menu.slideToggle();
+$("nav").addClass("js").before(
+	'<div id="menu" style="float:right;">&#9776;</div>'
+	);
+  $("#menu").click(function(){
+    $("nav").toggle();
   });
-
   $(window).resize(function(){
-    var w = $(window).width();
-    if(w > 320 && menu.is(':hidden')) {
-      menu.removeAttr('style');
+    if(window.innerWidth > 768) {
+      $("nav").removeAttr("style");
     }
   });
-});
