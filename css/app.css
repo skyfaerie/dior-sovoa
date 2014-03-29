@@ -99,8 +99,8 @@ Ultra-Bold 900 - Ultra-Bold 900 Italic
 body {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 12pt;
-  color: #eeeeee;
-  background-color: #111111;
+  color: #111111;
+  background-color: #fff;
 }
 
 /* line 29, ../_sass/_typography.scss */
@@ -152,28 +152,68 @@ p {
   margin-bottom: 0.618em;
 }
 
-/* line 70, ../_sass/_typography.scss */
+/* custom classes  */
+/* line 72, ../_sass/_typography.scss */
 .black {
   color: #111111;
 }
 
-/* line 74, ../_sass/_typography.scss */
+/* line 76, ../_sass/_typography.scss */
 .white {
   color: #eeeeee;
 }
 
-/* line 78, ../_sass/_typography.scss */
+/* line 80, ../_sass/_typography.scss */
 .gray {
   color: #cccccc;
 }
 
-/* line 82, ../_sass/_typography.scss */
+/* line 84, ../_sass/_typography.scss */
 .content {
+  color: #111111;
+}
+
+/* element styling  */
+/* line 91, ../_sass/_typography.scss */
+header {
+  background-color: #111111;
+}
+
+/* line 93, ../_sass/_typography.scss */
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* line 98, ../_sass/_typography.scss */
+a:hover {
+  color: #828282;
+}
+
+/* navbar */
+/* line 105, ../_sass/_typography.scss */
+nav a {
+  text-align: center;
+  text-decoration: none;
+  color: #cccccc;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #111111;
+}
+/* line 113, ../_sass/_typography.scss */
+nav a:hover {
+  background-color: #8c8c8c;
   color: #eeeeee;
 }
 
-/* social media buttons */
-/* line 89, ../_sass/_typography.scss */
+/* line 120, ../_sass/_typography.scss */
+#menu {
+  font-size: 2em;
+  color: #cccccc;
+  text-align: right;
+}
+
+/* footer / social media buttons */
+/* line 128, ../_sass/_typography.scss */
 .sm {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -185,117 +225,159 @@ p {
   -webkit-filter: grayscale(1);
 }
 
-/* line 98, ../_sass/_typography.scss */
+/* line 139, ../_sass/_typography.scss */
 .sm:hover {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: url(#greyscale);
-  filter: gray;
   -webkit-filter: grayscale(0);
 }
 
-/**/
 /* element Styles */
-/* line 12, ../_sass/_base.scss */
-body {
-  display: block;
+/* line 11, ../_sass/_base.scss */
+html {
+  width: 100%;
+  height: 100%;
 }
 
 /* line 16, ../_sass/_base.scss */
-nav {
-  text-align: right;
+body {
+  width: 100%;
+  height: 100%;
 }
-/* line 19, ../_sass/_base.scss */
-nav li {
-  display: inline-block;
-  padding: 10px;
+
+/* line 21, ../_sass/_base.scss */
+nav {
+  display: none;
 }
 /* line 24, ../_sass/_base.scss */
 nav a {
-  color: #eeeeee;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
 }
 
-/* line 27, ../_sass/_base.scss */
+/* line 31, ../_sass/_base.scss */
+header {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 39, ../_sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 31, ../_sass/_base.scss */
-a {
-  text-decoration: none;
-  color: #ccc;
-}
-
-/* line 36, ../_sass/_base.scss */
-a:hover {
-  color: #828282;
-}
-
-/* line 40, ../_sass/_base.scss */
+/* line 43, ../_sass/_base.scss */
 .footer {
   display: block;
   margin: 0 auto;
   width: 350px;
-  padding-bottom: 15px;
 }
-/* line 46, ../_sass/_base.scss */
+/* line 48, ../_sass/_base.scss */
 .footer ul {
   display: block;
   margin: 0 auto;
 }
-/* line 50, ../_sass/_base.scss */
+/* line 52, ../_sass/_base.scss */
 .footer ul li {
   display: inline-block;
   padding: 3px;
 }
 
 /* site customized styles */
-/* line 59, ../_sass/_base.scss */
+/* line 14, ../_sass/app.scss */
 .site {
-  display: block;
-  width: 81.66667%;
-  margin: 0 -0.83333%;
-  *zoom: 1;
   margin: 0 auto;
 }
-/* line 28, ../_sass/_grid.scss */
-.site:before, .site:after {
-  content: "";
-  display: table;
-}
-/* line 32, ../_sass/_grid.scss */
-.site:after {
-  clear: both;
-}
 
-/* line 66, ../_sass/_base.scss */
+/* line 19, ../_sass/app.scss */
 .content {
+  display: block;
+  padding: 0% 3%;
   margin: 0 auto;
   margin-top: 10px;
-  padding: 0px 20px;
-  background-color: rgba(2, 2, 2, 0.2);
-  min-height: 600px;
-  border-radius: 15px 15px 0px 0px;
+  min-height: 580px;
 }
 
-/* line 16, ../_sass/app.scss */
+/* line 29, ../_sass/app.scss */
+#menu {
+  display: block;
+  padding: 5px 25px;
+}
+
+@media (min-width: 768px) {
+  /* line 35, ../_sass/app.scss */
+  nav {
+    display: block;
+    padding: 10px 5px;
+  }
+  /* line 38, ../_sass/app.scss */
+  nav a {
+    width: auto;
+    display: inline-block;
+    border-bottom: none;
+    background: transparent;
+    text-align: left;
+  }
+
+  /* line 47, ../_sass/app.scss */
+  .logo {
+    top: 10%;
+  }
+
+  /* line 51, ../_sass/app.scss */
+  #menu {
+    display: none;
+  }
+}
+/* line 59, ../_sass/app.scss */
+section {
+  margin-bottom: 10px;
+}
+
+/* line 63, ../_sass/app.scss */
+.portrait, .bio {
+  display: inline;
+  float: left;
+  width: 97.91667%;
+  margin: 0 1.04167%;
+}
+
+/* line 67, ../_sass/app.scss */
+.portrait {
+  padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 72, ../_sass/app.scss */
+  .portrait {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.04167%;
+  }
+
+  /* line 76, ../_sass/app.scss */
+  .bio {
+    display: inline;
+    float: left;
+    width: 64.58333%;
+    margin: 0 1.04167%;
+  }
+}
+/* line 83, ../_sass/app.scss */
 #details {
   display: inline;
   float: left;
-  width: 38.33333%;
-  margin: 0 0.83333%;
+  width: 47.91667%;
+  margin: 0 1.04167%;
   padding-right: 20px;
 }
 
-/* line 21, ../_sass/app.scss */
+/* line 88, ../_sass/app.scss */
 form {
   display: inline;
   float: left;
-  width: 38.33333%;
-  margin: 0 0.83333%;
+  width: 47.91667%;
+  margin: 0 1.04167%;
   background-color: #ddd;
   border-radius: 5px;
   border: solid 1px #ccc;
@@ -304,27 +386,27 @@ form {
   color: #000;
 }
 
-/* line 31, ../_sass/app.scss */
+/* line 98, ../_sass/app.scss */
 .field-row {
   margin: 15px 0px;
   padding: 15px 0px;
 }
-/* line 35, ../_sass/app.scss */
+/* line 102, ../_sass/app.scss */
 .field-row label {
   display: inline;
   float: left;
-  width: 31.66667%;
-  margin: 0 0.83333%;
+  width: 39.58333%;
+  margin: 0 1.04167%;
   display: inline-block;
   vertical-align: middle;
   margin-top: 6px;
 }
-/* line 42, ../_sass/app.scss */
+/* line 109, ../_sass/app.scss */
 .field-row input, .field-row textarea {
   display: inline;
   float: left;
-  width: 45%;
-  margin: 0 0.83333%;
+  width: 56.25%;
+  margin: 0 1.04167%;
   vertical-align: middle;
   width: 225px;
   padding: 10px 5px;
@@ -332,13 +414,13 @@ form {
   margin-left: 5px;
   border: solid 1px #ccc;
 }
-/* line 52, ../_sass/app.scss */
+/* line 119, ../_sass/app.scss */
 .field-row textarea {
   min-height: 200px;
   margin-bottom: 10px;
 }
 
-/* line 58, ../_sass/app.scss */
+/* line 125, ../_sass/app.scss */
 #title {
   border-bottom: 1px solid 333;
 }

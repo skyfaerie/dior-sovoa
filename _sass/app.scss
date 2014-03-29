@@ -8,8 +8,75 @@
 ////// GENERAL STYLING /////
 @import "base";
 
+
+/* site customized styles */
+
+.site {
+	$total-width: 100%;
+	margin: 0 auto;
+}
+
+.content {
+  display: block;
+  padding: 0% 3%;
+	margin: 0 auto;
+	margin-top: 10px;
+	// background-color: rgba(2, 2, 2, 0.2);
+
+	min-height: 580px;
+}
+
+#menu {
+	display: block;
+  padding: 5px 25px;
+}
+
+@media(min-width: 768px) {
+  nav {
+    display: block;
+    padding: 10px 5px;
+    a {
+      width: auto;
+      display: inline-block;
+      border-bottom: none;
+      background: transparent;
+      text-align: left;
+    }
+  }
+
+  .logo {
+    top: 10%;
+  }
+
+  #menu {
+		display: none;
+	}
+}
+
+
 ////// ABOUT PAGE SPECIFIC /////
 
+section {
+	margin-bottom: 10px;
+}
+
+.portrait, .bio {
+	@include column(12);
+}
+
+.portrait {
+	padding-bottom: 15px;
+}
+
+@media(min-width: 768px) {
+	.portrait {
+		@include column(4);
+	}
+
+	.bio {
+		@include column(8);
+	}
+}
 
 ////// CLIENT PAGE SPECIFIC /////
 
@@ -69,8 +136,5 @@ form {
 ////// CONTACT PAGE SPECIFIC /////
 
 
-
-////// HOME PAGE SPECIFIC /////
-
-
+////// MEDIA QUERIES /////
 

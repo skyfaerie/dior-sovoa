@@ -21,8 +21,8 @@ $gray: #ccc;
 body {
 	font-family: 'Alegreya Sans', sans-serif;
 	font-size: 12pt;
-	color: $white;
-	background-color: $black;
+	color: $black;
+	background-color: #fff;
 }
 
 
@@ -67,6 +67,8 @@ p {
 	margin-bottom: 0.618em;
 }
 
+
+/* custom classes  */
 .black {
 	color: $black;
 }
@@ -80,26 +82,60 @@ p {
 }
 
 .content {
-	color: $white;
+	color: $black;
 
 }
 
-/* social media buttons */
+/* element styling  */
+
+header { background-color: $black; }
+
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+a:hover {
+	color: #828282;
+}
+
+/* navbar */
+
+nav {
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: $gray;
+    border-bottom: 1px solid $white;
+    background-color: $black;
+  }
+
+  a:hover {
+    background-color: darken($gray, 25%);
+    color: $white;
+  }
+}
+
+
+#menu {
+  font-size: 2em;
+  color: $gray;
+  text-align: right;
+}
+
+/* footer / social media buttons */
 
 .sm{
 	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
-	-ms-filter: grayscale(100%); -o-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	 -moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
 	filter: url(#greyscale);
 	filter: gray;
 	-webkit-filter: grayscale(1);
 }
 
 .sm:hover {
-	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
-	-ms-filter: grayscale(100%); -o-filter: grayscale(100%);
-	filter: url(#greyscale);
-	filter: gray;
 	-webkit-filter: grayscale(0);
 }

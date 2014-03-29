@@ -80,8 +80,8 @@ Ultra-Bold 900 - Ultra-Bold 900 Italic
 body {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 12pt;
-  color: #eeeeee;
-  background-color: #111111;
+  color: #111111;
+  background-color: #fff;
 }
 
 /* line 29, ../_sass/_typography.scss */
@@ -133,28 +133,68 @@ p {
   margin-bottom: 0.618em;
 }
 
-/* line 70, ../_sass/_typography.scss */
+/* custom classes  */
+/* line 72, ../_sass/_typography.scss */
 .black {
   color: #111111;
 }
 
-/* line 74, ../_sass/_typography.scss */
+/* line 76, ../_sass/_typography.scss */
 .white {
   color: #eeeeee;
 }
 
-/* line 78, ../_sass/_typography.scss */
+/* line 80, ../_sass/_typography.scss */
 .gray {
   color: #cccccc;
 }
 
-/* line 82, ../_sass/_typography.scss */
+/* line 84, ../_sass/_typography.scss */
 .content {
+  color: #111111;
+}
+
+/* element styling  */
+/* line 91, ../_sass/_typography.scss */
+header {
+  background-color: #111111;
+}
+
+/* line 93, ../_sass/_typography.scss */
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* line 98, ../_sass/_typography.scss */
+a:hover {
+  color: #828282;
+}
+
+/* navbar */
+/* line 105, ../_sass/_typography.scss */
+nav a {
+  text-align: center;
+  text-decoration: none;
+  color: #cccccc;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #111111;
+}
+/* line 113, ../_sass/_typography.scss */
+nav a:hover {
+  background-color: #8c8c8c;
   color: #eeeeee;
 }
 
-/* social media buttons */
-/* line 89, ../_sass/_typography.scss */
+/* line 120, ../_sass/_typography.scss */
+#menu {
+  font-size: 2em;
+  color: #cccccc;
+  text-align: right;
+}
+
+/* footer / social media buttons */
+/* line 128, ../_sass/_typography.scss */
 .sm {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -166,15 +206,8 @@ p {
   -webkit-filter: grayscale(1);
 }
 
-/* line 98, ../_sass/_typography.scss */
+/* line 139, ../_sass/_typography.scss */
 .sm:hover {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: url(#greyscale);
-  filter: gray;
   -webkit-filter: grayscale(0);
 }
 
