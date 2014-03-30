@@ -529,20 +529,20 @@ header {
     display: inline-block;
     border-bottom: none;
     background: transparent;
-    text-align: left;
+    float: right;
   }
 
-  /* line 43, ../_sass/home.scss */
+  /* line 44, ../_sass/home.scss */
   .logo {
     top: 10%;
   }
 
-  /* line 47, ../_sass/home.scss */
+  /* line 48, ../_sass/home.scss */
   #menu {
     display: none;
   }
 }
-/* line 52, ../_sass/home.scss */
+/* line 53, ../_sass/home.scss */
 .logo {
   margin: auto;
   position: absolute;
