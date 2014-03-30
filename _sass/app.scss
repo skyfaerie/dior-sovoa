@@ -80,50 +80,73 @@ section {
 
 ////// CLIENT PAGE SPECIFIC /////
 
-#details {
-	@include column(6);
-	padding-right: 20px;
+
+.details, .form-wrap {
+	@include column(12);
+}
+
+.details {
+	padding-bottom: 15px;
 }
 
 form {
-	@include column(6);
-	background-color: #ddd;
+	background-color: rgba(0,0,0,0.1);
 	border-radius: 5px;
 	border: solid 1px #ccc;
 	padding: 10px 15px;
 	font-size: 1.113em;
-	color: #000;
+	color: #333;
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 .field-row {
-	margin: 15px 0px;
-	padding: 15px 0px;
+	margin: 10px 0px;
 
 	label {
-		@include column(5);
 		display: inline-block;
-		vertical-align: middle;
-		margin-top: 6px;
+		vertical-align: top;
+		padding-top: 8px;
+		width: 100%;
 	}
 
 	input, textarea {
-		@include column(7);
-		vertical-align: middle;
-		width: 225px;
+		vertical-align: top;
+		width: 98%;
 		padding: 10px 5px;
 		border-radius: 5px;
-		margin-left: 5px;
+		margin-left: 2px;
 		border: solid 1px #ccc;
 	}
 
 	textarea {
-		min-height: 200px;
+		min-height: 150px;
 		margin-bottom: 10px;
 	}
 }
 
-#title{
-	border-bottom: 1px solid 333;
+@media(min-width: 768px) {
+	.details {
+		@include column(6);
+	}
+
+	.form-wrap {
+		@include column(6);
+	}
+
+	form {
+		max-width: 75%;
+	}
+
+	.field-row {
+		label {
+			width: 24%;
+		}
+
+		input, textarea {
+			width: 70%;
+		}
+	}
 }
 
 

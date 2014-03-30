@@ -363,64 +363,85 @@ section {
     margin: 0 1.04167%;
   }
 }
-/* line 83, ../_sass/app.scss */
-#details {
+/* line 84, ../_sass/app.scss */
+.details, .form-wrap {
   display: inline;
   float: left;
-  width: 47.91667%;
+  width: 97.91667%;
   margin: 0 1.04167%;
-  padding-right: 20px;
 }
 
 /* line 88, ../_sass/app.scss */
+.details {
+  padding-bottom: 15px;
+}
+
+/* line 92, ../_sass/app.scss */
 form {
-  display: inline;
-  float: left;
-  width: 47.91667%;
-  margin: 0 1.04167%;
-  background-color: #ddd;
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   border: solid 1px #ccc;
   padding: 10px 15px;
   font-size: 1.113em;
-  color: #000;
+  color: #333;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-/* line 98, ../_sass/app.scss */
+/* line 103, ../_sass/app.scss */
 .field-row {
-  margin: 15px 0px;
-  padding: 15px 0px;
+  margin: 10px 0px;
 }
-/* line 102, ../_sass/app.scss */
+/* line 106, ../_sass/app.scss */
 .field-row label {
-  display: inline;
-  float: left;
-  width: 39.58333%;
-  margin: 0 1.04167%;
   display: inline-block;
-  vertical-align: middle;
-  margin-top: 6px;
+  vertical-align: top;
+  padding-top: 8px;
+  width: 100%;
 }
-/* line 109, ../_sass/app.scss */
+/* line 113, ../_sass/app.scss */
 .field-row input, .field-row textarea {
-  display: inline;
-  float: left;
-  width: 56.25%;
-  margin: 0 1.04167%;
-  vertical-align: middle;
-  width: 225px;
+  vertical-align: top;
+  width: 98%;
   padding: 10px 5px;
   border-radius: 5px;
-  margin-left: 5px;
+  margin-left: 2px;
   border: solid 1px #ccc;
 }
-/* line 119, ../_sass/app.scss */
+/* line 122, ../_sass/app.scss */
 .field-row textarea {
-  min-height: 200px;
+  min-height: 150px;
   margin-bottom: 10px;
 }
 
-/* line 125, ../_sass/app.scss */
-#title {
-  border-bottom: 1px solid 333;
+@media (min-width: 768px) {
+  /* line 129, ../_sass/app.scss */
+  .details {
+    display: inline;
+    float: left;
+    width: 47.91667%;
+    margin: 0 1.04167%;
+  }
+
+  /* line 133, ../_sass/app.scss */
+  .form-wrap {
+    display: inline;
+    float: left;
+    width: 47.91667%;
+    margin: 0 1.04167%;
+  }
+
+  /* line 137, ../_sass/app.scss */
+  form {
+    max-width: 75%;
+  }
+
+  /* line 142, ../_sass/app.scss */
+  .field-row label {
+    width: 24%;
+  }
+  /* line 146, ../_sass/app.scss */
+  .field-row input, .field-row textarea {
+    width: 70%;
+  }
 }
