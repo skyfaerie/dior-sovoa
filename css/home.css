@@ -460,7 +460,7 @@ nav {
 nav a {
   display: block;
   width: 100%;
-  padding: 10px 15px;
+  padding: 10px 0px;
 }
 
 /* line 31, ../_sass/_base.scss */
@@ -522,6 +522,7 @@ header {
   nav {
     display: block;
     padding: 10px 5px;
+    text-align: right;
   }
   /* line 34, ../_sass/home.scss */
   nav a {
@@ -529,20 +530,20 @@ header {
     display: inline-block;
     border-bottom: none;
     background: transparent;
-    float: right;
+    padding: 10px 15px;
   }
 
-  /* line 44, ../_sass/home.scss */
+  /* line 43, ../_sass/home.scss */
   .logo {
     top: 10%;
   }
 
-  /* line 48, ../_sass/home.scss */
+  /* line 47, ../_sass/home.scss */
   #menu {
     display: none;
   }
 }
-/* line 53, ../_sass/home.scss */
+/* line 52, ../_sass/home.scss */
 .logo {
   margin: auto;
   position: absolute;

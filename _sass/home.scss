@@ -30,14 +30,13 @@ header { background: transparent; }
   nav {
     display: block;
     padding: 10px 5px;
-
+    text-align: right;
     a {
       width: auto;
       display: inline-block;
       border-bottom: none;
       background: transparent;
-      // text-align: left;
-      float: right;
+      padding: 10px 15px;
     }
   }
 

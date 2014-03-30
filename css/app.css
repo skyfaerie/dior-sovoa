@@ -251,7 +251,7 @@ nav {
 nav a {
   display: block;
   width: 100%;
-  padding: 10px 15px;
+  padding: 10px 0px;
 }
 
 /* line 31, ../_sass/_base.scss */
@@ -308,32 +308,33 @@ img {
   nav {
     display: block;
     padding: 10px 5px;
+    text-align: right;
   }
-  /* line 38, ../_sass/app.scss */
+  /* line 39, ../_sass/app.scss */
   nav a {
     width: auto;
     display: inline-block;
     border-bottom: none;
     background: transparent;
-    text-align: left;
+    padding: 10px 15px;
   }
 
-  /* line 47, ../_sass/app.scss */
+  /* line 48, ../_sass/app.scss */
   .logo {
     top: 10%;
   }
 
-  /* line 51, ../_sass/app.scss */
+  /* line 52, ../_sass/app.scss */
   #menu {
     display: none;
   }
 }
-/* line 59, ../_sass/app.scss */
+/* line 60, ../_sass/app.scss */
 section {
   margin-bottom: 10px;
 }
 
-/* line 63, ../_sass/app.scss */
+/* line 64, ../_sass/app.scss */
 .portrait, .bio {
   display: inline;
   float: left;
@@ -341,13 +342,13 @@ section {
   margin: 0 1.04167%;
 }
 
-/* line 67, ../_sass/app.scss */
+/* line 68, ../_sass/app.scss */
 .portrait {
   padding-bottom: 15px;
 }
 
 @media (min-width: 768px) {
-  /* line 72, ../_sass/app.scss */
+  /* line 73, ../_sass/app.scss */
   .portrait {
     display: inline;
     float: left;
@@ -355,7 +356,7 @@ section {
     margin: 0 1.04167%;
   }
 
-  /* line 76, ../_sass/app.scss */
+  /* line 77, ../_sass/app.scss */
   .bio {
     display: inline;
     float: left;
@@ -363,7 +364,7 @@ section {
     margin: 0 1.04167%;
   }
 }
-/* line 84, ../_sass/app.scss */
+/* line 85, ../_sass/app.scss */
 .details, .form-wrap {
   display: inline;
   float: left;
@@ -371,12 +372,12 @@ section {
   margin: 0 1.04167%;
 }
 
-/* line 88, ../_sass/app.scss */
+/* line 89, ../_sass/app.scss */
 .details {
   padding-bottom: 15px;
 }
 
-/* line 92, ../_sass/app.scss */
+/* line 93, ../_sass/app.scss */
 form {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -388,18 +389,18 @@ form {
   margin: 0 auto;
 }
 
-/* line 103, ../_sass/app.scss */
+/* line 104, ../_sass/app.scss */
 .field-row {
   margin: 10px 0px;
 }
-/* line 106, ../_sass/app.scss */
+/* line 107, ../_sass/app.scss */
 .field-row label {
   display: inline-block;
   vertical-align: top;
   padding-top: 8px;
   width: 100%;
 }
-/* line 113, ../_sass/app.scss */
+/* line 114, ../_sass/app.scss */
 .field-row input, .field-row textarea {
   vertical-align: top;
   width: 98%;
@@ -408,14 +409,14 @@ form {
   margin-left: 2px;
   border: solid 1px #ccc;
 }
-/* line 122, ../_sass/app.scss */
+/* line 123, ../_sass/app.scss */
 .field-row textarea {
   min-height: 150px;
   margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
-  /* line 129, ../_sass/app.scss */
+  /* line 130, ../_sass/app.scss */
   .details {
     display: inline;
     float: left;
@@ -423,7 +424,7 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 133, ../_sass/app.scss */
+  /* line 134, ../_sass/app.scss */
   .form-wrap {
     display: inline;
     float: left;
@@ -431,16 +432,16 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 137, ../_sass/app.scss */
+  /* line 138, ../_sass/app.scss */
   form {
     max-width: 75%;
   }
 
-  /* line 142, ../_sass/app.scss */
+  /* line 143, ../_sass/app.scss */
   .field-row label {
     width: 24%;
   }
-  /* line 146, ../_sass/app.scss */
+  /* line 147, ../_sass/app.scss */
   .field-row input, .field-row textarea {
     width: 70%;
   }
