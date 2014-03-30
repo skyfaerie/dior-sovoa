@@ -82,6 +82,19 @@ section {
 ////// CLIENT PAGE SPECIFIC /////
 
 
+
+
+////// MOTION PAGE SPECIFIC /////
+
+
+
+////// GALLERY PAGE SPECIFIC /////
+
+
+
+////// CONTACT PAGE SPECIFIC /////
+
+
 .details, .form-wrap {
 	@include column(12);
 }
@@ -150,16 +163,3 @@ form {
 		}
 	}
 }
-
-
-////// MOTION PAGE SPECIFIC /////
-
-
-////// GALLERY PAGE SPECIFIC /////
-
-
-////// CONTACT PAGE SPECIFIC /////
-
-
-////// MEDIA QUERIES /////
-

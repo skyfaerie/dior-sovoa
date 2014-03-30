@@ -352,7 +352,7 @@ section {
     margin: 0 1.04167%;
   }
 }
-/* line 85, ../_sass/app.scss */
+/* line 98, ../_sass/app.scss */
 .details, .form-wrap {
   display: inline;
   float: left;
@@ -360,12 +360,12 @@ section {
   margin: 0 1.04167%;
 }
 
-/* line 89, ../_sass/app.scss */
+/* line 102, ../_sass/app.scss */
 .details {
   padding-bottom: 15px;
 }
 
-/* line 93, ../_sass/app.scss */
+/* line 106, ../_sass/app.scss */
 form {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -378,18 +378,18 @@ form {
   margin-bottom: 10px;
 }
 
-/* line 105, ../_sass/app.scss */
+/* line 118, ../_sass/app.scss */
 .field-row {
   margin: 10px 0px;
 }
-/* line 108, ../_sass/app.scss */
+/* line 121, ../_sass/app.scss */
 .field-row label {
   display: inline-block;
   vertical-align: top;
   padding-top: 8px;
   width: 100%;
 }
-/* line 115, ../_sass/app.scss */
+/* line 128, ../_sass/app.scss */
 .field-row input, .field-row textarea {
   vertical-align: top;
   width: 98%;
@@ -398,14 +398,14 @@ form {
   margin-left: 2px;
   border: solid 1px #ccc;
 }
-/* line 124, ../_sass/app.scss */
+/* line 137, ../_sass/app.scss */
 .field-row textarea {
   min-height: 150px;
   margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
-  /* line 131, ../_sass/app.scss */
+  /* line 144, ../_sass/app.scss */
   .details {
     display: inline;
     float: left;
@@ -413,7 +413,7 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 135, ../_sass/app.scss */
+  /* line 148, ../_sass/app.scss */
   .form-wrap {
     display: inline;
     float: left;
@@ -421,16 +421,16 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 139, ../_sass/app.scss */
+  /* line 152, ../_sass/app.scss */
   form {
     max-width: 75%;
   }
 
-  /* line 144, ../_sass/app.scss */
+  /* line 157, ../_sass/app.scss */
   .field-row label {
     width: 24%;
   }
-  /* line 148, ../_sass/app.scss */
+  /* line 161, ../_sass/app.scss */
   .field-row input, .field-row textarea {
     width: 70%;
   }
