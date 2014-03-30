@@ -267,19 +267,7 @@ img {
 
 /* line 43, ../_sass/_base.scss */
 .footer {
-  display: block;
-  margin: 0 auto;
-  width: 350px;
-}
-/* line 48, ../_sass/_base.scss */
-.footer ul {
-  display: block;
-  margin: 0 auto;
-}
-/* line 52, ../_sass/_base.scss */
-.footer ul li {
-  display: inline-block;
-  padding: 3px;
+  text-align: center;
 }
 
 /* site customized styles */
