@@ -370,23 +370,24 @@ section {
 /* line 91, ../_sass/app.scss */
 .item {
   width: 150px;
+  height: 150px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
 
-/* line 97, ../_sass/app.scss */
+/* line 98, ../_sass/app.scss */
 #fit-width .masonry {
   margin: 0 auto;
 }
 
 /* filter */
-/* line 103, ../_sass/app.scss */
+/* line 104, ../_sass/app.scss */
 #filter {
   display: none;
   margin-left: 5px;
 }
 
-/* line 109, ../_sass/app.scss */
+/* line 110, ../_sass/app.scss */
 .filter {
   display: inline-block;
   text-align: center;
@@ -395,7 +396,7 @@ section {
   margin-left: 5px;
 }
 
-/* line 128, ../_sass/app.scss */
+/* line 129, ../_sass/app.scss */
 .details, .form-wrap {
   display: inline;
   float: left;
@@ -403,12 +404,12 @@ section {
   margin: 0 1.04167%;
 }
 
-/* line 132, ../_sass/app.scss */
+/* line 133, ../_sass/app.scss */
 .details {
   padding-bottom: 15px;
 }
 
-/* line 136, ../_sass/app.scss */
+/* line 137, ../_sass/app.scss */
 form {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -421,18 +422,18 @@ form {
   margin-bottom: 10px;
 }
 
-/* line 148, ../_sass/app.scss */
+/* line 149, ../_sass/app.scss */
 .field-row {
   margin: 10px 0px;
 }
-/* line 151, ../_sass/app.scss */
+/* line 152, ../_sass/app.scss */
 .field-row label {
   display: inline-block;
   vertical-align: top;
   padding-top: 8px;
   width: 100%;
 }
-/* line 158, ../_sass/app.scss */
+/* line 159, ../_sass/app.scss */
 .field-row input, .field-row textarea {
   vertical-align: top;
   width: 98%;
@@ -441,14 +442,14 @@ form {
   margin-left: 2px;
   border: solid 1px #ccc;
 }
-/* line 167, ../_sass/app.scss */
+/* line 168, ../_sass/app.scss */
 .field-row textarea {
   min-height: 150px;
   margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
-  /* line 174, ../_sass/app.scss */
+  /* line 175, ../_sass/app.scss */
   .details {
     display: inline;
     float: left;
@@ -456,7 +457,7 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 178, ../_sass/app.scss */
+  /* line 179, ../_sass/app.scss */
   .form-wrap {
     display: inline;
     float: left;
@@ -464,16 +465,16 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 182, ../_sass/app.scss */
+  /* line 183, ../_sass/app.scss */
   form {
     max-width: 75%;
   }
 
-  /* line 187, ../_sass/app.scss */
+  /* line 188, ../_sass/app.scss */
   .field-row label {
     width: 24%;
   }
-  /* line 191, ../_sass/app.scss */
+  /* line 192, ../_sass/app.scss */
   .field-row input, .field-row textarea {
     width: 70%;
   }
