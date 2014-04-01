@@ -187,7 +187,7 @@ nav a:hover {
   color: #eeeeee;
 }
 
-/* line 120, ../_sass/_typography.scss */
+/* line 119, ../_sass/_typography.scss */
 #menu {
   font-size: 2em;
   color: #cccccc;
@@ -195,7 +195,7 @@ nav a:hover {
 }
 
 /* footer / social media buttons */
-/* line 128, ../_sass/_typography.scss */
+/* line 127, ../_sass/_typography.scss */
 .sm {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -207,9 +207,17 @@ nav a:hover {
   -webkit-filter: grayscale(1);
 }
 
-/* line 139, ../_sass/_typography.scss */
+/* line 138, ../_sass/_typography.scss */
 .sm:hover {
   -webkit-filter: grayscale(0);
+}
+
+/* filter */
+/* line 145, ../_sass/_typography.scss */
+.filter {
+  border: 0px solid #111111;
+  border-radius: 25px;
+  background-color: #cccccc;
 }
 
 /* line 17, ../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -414,7 +422,7 @@ nav a:hover {
   color: #eeeeee;
 }
 
-/* line 120, ../_sass/_typography.scss */
+/* line 119, ../_sass/_typography.scss */
 #menu {
   font-size: 2em;
   color: #cccccc;
@@ -422,7 +430,7 @@ nav a:hover {
 }
 
 /* footer / social media buttons */
-/* line 128, ../_sass/_typography.scss */
+/* line 127, ../_sass/_typography.scss */
 .sm {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -434,9 +442,17 @@ nav a:hover {
   -webkit-filter: grayscale(1);
 }
 
-/* line 139, ../_sass/_typography.scss */
+/* line 138, ../_sass/_typography.scss */
 .sm:hover {
   -webkit-filter: grayscale(0);
+}
+
+/* filter */
+/* line 145, ../_sass/_typography.scss */
+.filter {
+  border: 0px solid #111111;
+  border-radius: 25px;
+  background-color: #cccccc;
 }
 
 /* element Styles */

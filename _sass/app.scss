@@ -81,6 +81,8 @@ section {
 
 ////// CLIENT PAGE SPECIFIC /////
 
+/* masonry */
+
 #container {
 	margin: 0 auto;
 	padding-left: 40px;
@@ -94,6 +96,22 @@ section {
 
 #fit-width .masonry {
   margin: 0 auto;
+}
+
+/* filter */
+
+#filter {
+	display: none;
+	// display: inline-block;
+	margin-left: 5px;
+}
+
+.filter {
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+	padding: 5px;
+	margin-left: 5px;
 }
 
 ////// MOTION PAGE SPECIFIC /////

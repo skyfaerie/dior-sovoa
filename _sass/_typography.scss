@@ -116,7 +116,6 @@ nav {
   }
 }
 
-
 #menu {
   font-size: 2em;
   color: $gray;
@@ -125,7 +124,7 @@ nav {
 
 /* footer / social media buttons */
 
-.sm{
+.sm {
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 	 -moz-filter: grayscale(100%);
@@ -139,3 +138,14 @@ nav {
 .sm:hover {
 	-webkit-filter: grayscale(0);
 }
+
+
+/* filter */
+
+.filter {
+	border: 0px solid $black;
+	border-radius: 25px;
+	background-color: $gray;
+}
+
+
