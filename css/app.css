@@ -352,7 +352,25 @@ section {
     margin: 0 1.04167%;
   }
 }
-/* line 98, ../_sass/app.scss */
+/* line 84, ../_sass/app.scss */
+#container {
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+/* line 89, ../_sass/app.scss */
+.item {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+/* line 95, ../_sass/app.scss */
+#fit-width .masonry {
+  margin: 0 auto;
+}
+
+/* line 110, ../_sass/app.scss */
 .details, .form-wrap {
   display: inline;
   float: left;
@@ -360,12 +378,12 @@ section {
   margin: 0 1.04167%;
 }
 
-/* line 102, ../_sass/app.scss */
+/* line 114, ../_sass/app.scss */
 .details {
   padding-bottom: 15px;
 }
 
-/* line 106, ../_sass/app.scss */
+/* line 118, ../_sass/app.scss */
 form {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -378,18 +396,18 @@ form {
   margin-bottom: 10px;
 }
 
-/* line 118, ../_sass/app.scss */
+/* line 130, ../_sass/app.scss */
 .field-row {
   margin: 10px 0px;
 }
-/* line 121, ../_sass/app.scss */
+/* line 133, ../_sass/app.scss */
 .field-row label {
   display: inline-block;
   vertical-align: top;
   padding-top: 8px;
   width: 100%;
 }
-/* line 128, ../_sass/app.scss */
+/* line 140, ../_sass/app.scss */
 .field-row input, .field-row textarea {
   vertical-align: top;
   width: 98%;
@@ -398,14 +416,14 @@ form {
   margin-left: 2px;
   border: solid 1px #ccc;
 }
-/* line 137, ../_sass/app.scss */
+/* line 149, ../_sass/app.scss */
 .field-row textarea {
   min-height: 150px;
   margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
-  /* line 144, ../_sass/app.scss */
+  /* line 156, ../_sass/app.scss */
   .details {
     display: inline;
     float: left;
@@ -413,7 +431,7 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 148, ../_sass/app.scss */
+  /* line 160, ../_sass/app.scss */
   .form-wrap {
     display: inline;
     float: left;
@@ -421,16 +439,16 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 152, ../_sass/app.scss */
+  /* line 164, ../_sass/app.scss */
   form {
     max-width: 75%;
   }
 
-  /* line 157, ../_sass/app.scss */
+  /* line 169, ../_sass/app.scss */
   .field-row label {
     width: 24%;
   }
-  /* line 161, ../_sass/app.scss */
+  /* line 173, ../_sass/app.scss */
   .field-row input, .field-row textarea {
     width: 70%;
   }

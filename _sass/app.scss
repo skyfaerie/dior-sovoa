@@ -81,8 +81,20 @@ section {
 
 ////// CLIENT PAGE SPECIFIC /////
 
+#container {
+	margin: 0 auto;
+	padding-left: 40px;
+}
 
+.item {
+	width: 150px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
 
+#fit-width .masonry {
+  margin: 0 auto;
+}
 
 ////// MOTION PAGE SPECIFIC /////
 
