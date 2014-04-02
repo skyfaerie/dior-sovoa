@@ -238,6 +238,44 @@ nav a:hover {
   background-color: #cccccc;
 }
 
+/* contact */
+/* line 154, ../_sass/_typography.scss */
+form {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  font: 1.1em 'Alegreya Sans', sans-serif;
+  color: #333;
+}
+
+/* line 164, ../_sass/_typography.scss */
+.field-row label {
+  vertical-align: top;
+}
+/* line 168, ../_sass/_typography.scss */
+.field-row input, .field-row textarea {
+  vertical-align: top;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+}
+
+/* line 176, ../_sass/_typography.scss */
+#btn-submit #ss-submit {
+  background-color: #404040;
+  color: #eeeeee;
+  border: 0px solid #111111;
+  border-radius: 5px;
+  font: 1em 'Alegreya Sans', sans-serif;
+}
+
+/* line 185, ../_sass/_typography.scss */
+#thanks {
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  color: #21a532;
+}
+
 /* element Styles */
 /* line 11, ../_sass/_base.scss */
 html {
@@ -411,45 +449,64 @@ section {
 
 /* line 137, ../_sass/app.scss */
 form {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  border: solid 1px #ccc;
   padding: 10px 15px;
-  font-size: 1.113em;
-  color: #333;
   max-width: 100%;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
-/* line 149, ../_sass/app.scss */
+/* line 144, ../_sass/app.scss */
 .field-row {
   margin: 10px 0px;
 }
-/* line 152, ../_sass/app.scss */
+/* line 147, ../_sass/app.scss */
 .field-row label {
   display: inline-block;
-  vertical-align: top;
   padding-top: 8px;
   width: 100%;
 }
-/* line 159, ../_sass/app.scss */
+/* line 153, ../_sass/app.scss */
 .field-row input, .field-row textarea {
-  vertical-align: top;
   width: 98%;
   padding: 10px 5px;
-  border-radius: 5px;
   margin-left: 2px;
-  border: solid 1px #ccc;
 }
-/* line 168, ../_sass/app.scss */
+/* line 159, ../_sass/app.scss */
 .field-row textarea {
   min-height: 150px;
   margin-bottom: 10px;
 }
 
+/* line 165, ../_sass/app.scss */
+#btn-submit {
+  display: block;
+  width: 102.08333%;
+  margin: 0 -1.04167%;
+  *zoom: 1;
+}
+/* line 28, ../_sass/_grid.scss */
+#btn-submit:before, #btn-submit:after {
+  content: "";
+  display: table;
+}
+/* line 32, ../_sass/_grid.scss */
+#btn-submit:after {
+  clear: both;
+}
+/* line 168, ../_sass/app.scss */
+#btn-submit #ss-submit {
+  margin-left: 76.04167%;
+  padding: 10px 15px;
+}
+
+/* line 174, ../_sass/app.scss */
+#thanks {
+  padding-top: 10px;
+  display: none;
+}
+
 @media (min-width: 768px) {
-  /* line 175, ../_sass/app.scss */
+  /* line 180, ../_sass/app.scss */
   .details {
     display: inline;
     float: left;
@@ -457,7 +514,7 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 179, ../_sass/app.scss */
+  /* line 184, ../_sass/app.scss */
   .form-wrap {
     display: inline;
     float: left;
@@ -465,16 +522,16 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 183, ../_sass/app.scss */
+  /* line 188, ../_sass/app.scss */
   form {
     max-width: 75%;
   }
 
-  /* line 188, ../_sass/app.scss */
+  /* line 193, ../_sass/app.scss */
   .field-row label {
     width: 24%;
   }
-  /* line 192, ../_sass/app.scss */
+  /* line 197, ../_sass/app.scss */
   .field-row input, .field-row textarea {
     width: 70%;
   }

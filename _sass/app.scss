@@ -135,12 +135,7 @@ section {
 }
 
 form {
-	background-color: rgba(0,0,0,0.1);
-	border-radius: 5px;
-	border: solid 1px #ccc;
 	padding: 10px 15px;
-	font-size: 1.113em;
-	color: #333;
 	max-width: 100%;
 	margin: 0 auto;
 	margin-bottom: 10px;
@@ -151,24 +146,34 @@ form {
 
 	label {
 		display: inline-block;
-		vertical-align: top;
 		padding-top: 8px;
 		width: 100%;
 	}
 
 	input, textarea {
-		vertical-align: top;
 		width: 98%;
 		padding: 10px 5px;
-		border-radius: 5px;
 		margin-left: 2px;
-		border: solid 1px #ccc;
 	}
 
 	textarea {
 		min-height: 150px;
 		margin-bottom: 10px;
 	}
+}
+
+#btn-submit {
+	@include row(12);
+
+	#ss-submit {
+		@include push($offset:9);
+		padding: 10px 15px;
+	}
+}
+
+#thanks {
+	padding-top: 10px;
+	display: none;
 }
 
 @media(min-width: 768px) {

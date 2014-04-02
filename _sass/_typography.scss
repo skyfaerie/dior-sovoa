@@ -149,3 +149,43 @@ nav {
 }
 
 
+/* contact */
+
+form {
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	font: 1.1em 'Alegreya Sans', sans-serif;
+	color: #333;
+}
+
+.field-row {
+
+	label {
+		vertical-align: top;
+	}
+
+	input, textarea {
+		vertical-align: top;
+		border: solid 1px #ccc;
+		border-radius: 5px;
+	}
+}
+
+#btn-submit {
+	#ss-submit {
+		background-color: darken($gray, 55%);
+		color: $white;
+		border: 0px solid $black;
+		border-radius: 5px;
+		font: 1em 'Alegreya Sans', sans-serif;
+	}
+}
+
+#thanks {
+	text-align: center;
+	font-weight: 500;
+	font-style: italic;
+	color: #21a532;
+}
+
