@@ -148,6 +148,25 @@ nav {
 	background-color: $gray;
 }
 
+/* in motion */
+
+#inmotion {
+
+}
+
+.article {
+
+	color: darken($gray, 10%);
+
+	a {
+		color: lighten($black, 20%);
+		font-size: 1.333em;
+	}
+
+	a:hover {
+		color: lighten($black, 30%);
+	}
+}
 
 /* contact */
 
