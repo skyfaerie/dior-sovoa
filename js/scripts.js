@@ -19,6 +19,14 @@ $container.masonry({
   itemSelector: '.item'
 });
 
+var $gallery = $('#gallery');
+$gallery.masonry({
+  columnWidth: 100,
+  gutter: 20,
+  "isFitWidth": true,
+  itemSelector: '.picture'
+});
+
 
 $('.pub').click(function(){
 	$('.publication').show();
