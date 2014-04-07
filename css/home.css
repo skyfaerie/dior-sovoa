@@ -628,11 +628,6 @@ header {
   background: transparent;
 }
 
-/* line 30, ../_sass/home.scss */
-.content {
-  position: absolute;
-}
-
 /* line 34, ../_sass/home.scss */
 .logo-wrapper {
   height: 100%;
@@ -678,7 +673,7 @@ header {
 
   /* line 71, ../_sass/home.scss */
   .logo {
-    margin-top: 5%;
+    margin-top: 3%;
   }
 
   /* line 75, ../_sass/home.scss */
