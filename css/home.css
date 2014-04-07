@@ -197,7 +197,6 @@ nav a:hover {
 /* footer / social media buttons */
 /* line 127, ../_sass/_typography.scss */
 .sm {
-  width: 40px;
   /* filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
@@ -208,13 +207,13 @@ nav a:hover {
   -webkit-filter: grayscale(1); */
 }
 
-/* line 139, ../_sass/_typography.scss */
+/* line 138, ../_sass/_typography.scss */
 .sm:hover {
   /* 	-webkit-filter: grayscale(0); */
 }
 
 /* filter */
-/* line 146, ../_sass/_typography.scss */
+/* line 145, ../_sass/_typography.scss */
 .filter {
   border: 0px solid #111111;
   border-radius: 25px;
@@ -222,22 +221,22 @@ nav a:hover {
 }
 
 /* in motion */
-/* line 158, ../_sass/_typography.scss */
+/* line 157, ../_sass/_typography.scss */
 .article {
   color: #b3b3b3;
 }
-/* line 162, ../_sass/_typography.scss */
+/* line 161, ../_sass/_typography.scss */
 .article a {
   color: #444444;
   font-size: 1.333em;
 }
-/* line 167, ../_sass/_typography.scss */
+/* line 166, ../_sass/_typography.scss */
 .article a:hover {
   color: #5e5e5e;
 }
 
 /* contact */
-/* line 174, ../_sass/_typography.scss */
+/* line 173, ../_sass/_typography.scss */
 form {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -246,18 +245,18 @@ form {
   color: #333;
 }
 
-/* line 184, ../_sass/_typography.scss */
+/* line 183, ../_sass/_typography.scss */
 .field-row label {
   vertical-align: top;
 }
-/* line 188, ../_sass/_typography.scss */
+/* line 187, ../_sass/_typography.scss */
 .field-row input, .field-row textarea {
   vertical-align: top;
   border: solid 1px #ccc;
   border-radius: 5px;
 }
 
-/* line 196, ../_sass/_typography.scss */
+/* line 195, ../_sass/_typography.scss */
 #btn-submit #ss-submit {
   background-color: #404040;
   color: #eeeeee;
@@ -266,7 +265,7 @@ form {
   font: 1em 'Alegreya Sans', sans-serif;
 }
 
-/* line 205, ../_sass/_typography.scss */
+/* line 204, ../_sass/_typography.scss */
 #thanks {
   text-align: center;
   font-weight: 500;
@@ -486,7 +485,6 @@ nav a:hover {
 /* footer / social media buttons */
 /* line 127, ../_sass/_typography.scss */
 .sm {
-  width: 40px;
   /* filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
@@ -497,13 +495,13 @@ nav a:hover {
   -webkit-filter: grayscale(1); */
 }
 
-/* line 139, ../_sass/_typography.scss */
+/* line 138, ../_sass/_typography.scss */
 .sm:hover {
   /* 	-webkit-filter: grayscale(0); */
 }
 
 /* filter */
-/* line 146, ../_sass/_typography.scss */
+/* line 145, ../_sass/_typography.scss */
 .filter {
   border: 0px solid #111111;
   border-radius: 25px;
@@ -511,22 +509,22 @@ nav a:hover {
 }
 
 /* in motion */
-/* line 158, ../_sass/_typography.scss */
+/* line 157, ../_sass/_typography.scss */
 .article {
   color: #b3b3b3;
 }
-/* line 162, ../_sass/_typography.scss */
+/* line 161, ../_sass/_typography.scss */
 .article a {
   color: #444444;
   font-size: 1.333em;
 }
-/* line 167, ../_sass/_typography.scss */
+/* line 166, ../_sass/_typography.scss */
 .article a:hover {
   color: #5e5e5e;
 }
 
 /* contact */
-/* line 174, ../_sass/_typography.scss */
+/* line 173, ../_sass/_typography.scss */
 form {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -535,18 +533,18 @@ form {
   color: #333;
 }
 
-/* line 184, ../_sass/_typography.scss */
+/* line 183, ../_sass/_typography.scss */
 .field-row label {
   vertical-align: top;
 }
-/* line 188, ../_sass/_typography.scss */
+/* line 187, ../_sass/_typography.scss */
 .field-row input, .field-row textarea {
   vertical-align: top;
   border: solid 1px #ccc;
   border-radius: 5px;
 }
 
-/* line 196, ../_sass/_typography.scss */
+/* line 195, ../_sass/_typography.scss */
 #btn-submit #ss-submit {
   background-color: #404040;
   color: #eeeeee;
@@ -555,7 +553,7 @@ form {
   font: 1em 'Alegreya Sans', sans-serif;
 }
 
-/* line 205, ../_sass/_typography.scss */
+/* line 204, ../_sass/_typography.scss */
 #thanks {
   text-align: center;
   font-weight: 500;
@@ -657,14 +655,19 @@ header {
   bottom: 10px;
 }
 
+/* line 53, ../_sass/home.scss */
+.sm {
+  width: 30px;
+}
+
 @media (min-width: 768px) {
-  /* line 54, ../_sass/home.scss */
+  /* line 58, ../_sass/home.scss */
   nav {
     display: block;
     padding: 10px 5px;
     text-align: right;
   }
-  /* line 58, ../_sass/home.scss */
+  /* line 62, ../_sass/home.scss */
   nav a {
     width: auto;
     display: inline-block;
@@ -673,12 +676,12 @@ header {
     padding: 10px 15px;
   }
 
-  /* line 67, ../_sass/home.scss */
+  /* line 71, ../_sass/home.scss */
   .logo {
     margin-top: 5%;
   }
 
-  /* line 71, ../_sass/home.scss */
+  /* line 75, ../_sass/home.scss */
   #menu {
     display: none;
   }

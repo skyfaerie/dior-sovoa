@@ -50,6 +50,10 @@ header { background: transparent; }
   bottom: 10px;
 }
 
+.sm {
+  width: 30px;
+}
+
 @media(min-width: 768px) {
   nav {
     display: block;
