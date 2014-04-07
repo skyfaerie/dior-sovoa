@@ -20,11 +20,35 @@ body {
 }
 
 #menu {
+  position: relative;
   display: block;
   padding: 0px 5px;
 }
 
 header { background: transparent; }
+
+.content {
+  position: absolute;
+}
+
+.logo-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-left: 11.8%;
+  max-width: 85%;
+  margin-top: 30%;
+}
+
+.footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
 
 @media(min-width: 768px) {
   nav {
@@ -41,27 +65,10 @@ header { background: transparent; }
   }
 
   .logo {
-    top: 10%;
+    margin-top: 5%;
   }
 
   #menu {
     display: none;
   }
-}
-
-.logo {
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 8.6%;
-  bottom: 0;
-  right: 0;
-  max-width: 85%;
-  z-index: -1;
-}
-
-.footer {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
 }
