@@ -594,19 +594,23 @@ nav a {
   width: 100%;
   padding: 10px 0px;
 }
+/* line 30, ../_sass/_base.scss */
+nav .sm-url {
+  display: none;
+}
 
-/* line 31, ../_sass/_base.scss */
+/* line 33, ../_sass/_base.scss */
 header {
   display: block;
   max-width: 100%;
 }
 
-/* line 39, ../_sass/_base.scss */
+/* line 41, ../_sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 43, ../_sass/_base.scss */
+/* line 45, ../_sass/_base.scss */
 .footer {
   text-align: center;
 }
@@ -631,20 +635,21 @@ body {
   position: relative;
   display: block;
   padding: 0px 5px;
+  margin-bottom: -32px;
 }
 
-/* line 28, ../_sass/home.scss */
+/* line 29, ../_sass/home.scss */
 header {
   background: transparent;
 }
 
-/* line 34, ../_sass/home.scss */
+/* line 35, ../_sass/home.scss */
 .logo-wrapper {
   height: 100%;
   width: 100%;
 }
 
-/* line 39, ../_sass/home.scss */
+/* line 40, ../_sass/home.scss */
 .logo {
   display: block;
   margin: 0 auto;
@@ -653,26 +658,26 @@ header {
   margin-top: 30%;
 }
 
-/* line 47, ../_sass/home.scss */
+/* line 48, ../_sass/home.scss */
 .footer {
   position: absolute;
   right: 20px;
   bottom: 5px;
 }
 
-/* line 53, ../_sass/home.scss */
+/* line 54, ../_sass/home.scss */
 .sm {
   width: 30px;
 }
 
 @media (min-width: 768px) {
-  /* line 58, ../_sass/home.scss */
+  /* line 59, ../_sass/home.scss */
   nav {
     display: block;
     padding: 10px 5px;
     text-align: right;
   }
-  /* line 62, ../_sass/home.scss */
+  /* line 63, ../_sass/home.scss */
   nav a {
     width: auto;
     display: inline-block;
@@ -681,12 +686,12 @@ header {
     padding: 10px 15px;
   }
 
-  /* line 71, ../_sass/home.scss */
+  /* line 72, ../_sass/home.scss */
   .logo {
     margin-top: 3%;
   }
 
-  /* line 75, ../_sass/home.scss */
+  /* line 76, ../_sass/home.scss */
   #menu {
     display: none;
   }

@@ -4,6 +4,13 @@
 
 $("#menu").click(function(){
   $("nav").toggle();
+
+  /* attempt to show navbar if toggled off and resized */
+  $(window).resize(function() {
+    if ($(window).width() < 768) {
+      $("nav").show();
+    }
+  });
 });
 
 /**************************************/
@@ -29,26 +36,26 @@ $gallery.masonry({
 
 
 $('.pub').click(function(){
-	$('.publication').show();
-	$('.celebrity').hide();
-	$('.tv').hide();
+  $('.publication').show();
+  $('.celebrity').hide();
+  $('.tv').hide();
 });
 
 $('.celeb').click(function(){
-	$('.celebrity').show();
-	$('.publication').hide();
-	$('.tv').hide();
+  $('.celebrity').show();
+  $('.publication').hide();
+  $('.tv').hide();
 });
 
 
 $('.tele').click(function(){
-	$('.tv').show();
-	$('.publication').hide();
-	$('.celebrity').hide();
+  $('.tv').show();
+  $('.publication').hide();
+  $('.celebrity').hide();
 });
 
 $('.all').click(function(){
-	$('.publication').show();
-	$('.celebrity').show();
-	$('.tv').show();
+  $('.publication').show();
+  $('.celebrity').show();
+  $('.tv').show();
 });
