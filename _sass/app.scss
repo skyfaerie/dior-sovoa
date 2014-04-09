@@ -32,6 +32,40 @@
   margin-bottom: -32px;
 }
 
+.sm {
+	width: 25px;
+}
+
+.footer {
+	clear: both;
+	height: 20px;
+	padding-top: 0.5em;
+	font-size: 0.8em;
+
+	div { padding: 1.03em 0em; }
+}
+
+@media (max-width: 767px) {
+	nav {
+		#sm-wrapper {
+			display: block;
+			text-align: center;
+			padding: 5px;
+			margin-top: 3px;
+		}
+
+		.sm-url {
+			display: inline;
+			padding: 0px 10px;
+			border-bottom: none;
+		}
+
+		.sm:hover {
+			background-color: none;
+		}
+	}
+}
+
 @media(min-width: 768px) {
   nav {
     display: block;
@@ -53,19 +87,6 @@
   #menu {
 		display: none;
 	}
-}
-
-.sm {
-		width: 40px;
-}
-
-.footer {
-	clear: both;
-	height: 20px;
-	padding-top: 0.5em;
-	font-size: 0.8em;
-
-	div { padding: 1.03em 0em; }
 }
 
 ////// ABOUT PAGE SPECIFIC /////
