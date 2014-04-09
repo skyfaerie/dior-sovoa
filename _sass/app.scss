@@ -78,6 +78,24 @@
       background: transparent;
       padding: 10px 15px;
     }
+
+    #sm-wrapper {
+			display: block;
+			text-align: center;
+			padding: 5px;
+			margin-top: 3px;
+			float: left;
+		}
+
+		.sm-url {
+			display: inline;
+			padding: 0px 2px;
+			border-bottom: none;
+		}
+
+		.sm:hover {
+			background-color: none;
+		}
   }
 
   .logo {
@@ -86,6 +104,12 @@
 
   #menu {
 		display: none;
+	}
+}
+
+@media(min-width: 768px) and (max-width:832px){
+	#sm-wrapper {
+		display: inline;
 	}
 }
 
