@@ -125,6 +125,10 @@ section {
 
 .portrait {
 	padding-bottom: 15px;
+
+	img {
+		max-height: 485px !important;
+	}
 }
 
 @media(min-width: 768px) {
