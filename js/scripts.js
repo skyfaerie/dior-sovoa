@@ -34,28 +34,3 @@ $gallery.masonry({
   itemSelector: '.picture'
 });
 
-
-$('.pub').click(function(){
-  $('.publication').show();
-  $('.celebrity').hide();
-  $('.tv').hide();
-});
-
-$('.celeb').click(function(){
-  $('.celebrity').show();
-  $('.publication').hide();
-  $('.tv').hide();
-});
-
-
-$('.tele').click(function(){
-  $('.tv').show();
-  $('.publication').hide();
-  $('.celebrity').hide();
-});
-
-$('.all').click(function(){
-  $('.publication').show();
-  $('.celebrity').show();
-  $('.tv').show();
-});
