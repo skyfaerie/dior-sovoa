@@ -158,8 +158,15 @@ section {
 }
 
 .button-group {
+	margin-bottom: 2em;
+
 	button {
-		font-size
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		min-width: 125px;
+		padding: 5px;
+		font-size: 1em;
+		color: #333;
 	}
 }
 
