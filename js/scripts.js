@@ -14,17 +14,33 @@ $("#menu").click(function(){
 });
 
 /**************************************/
-/* MASONRY JS
+/* ISOTOPE JS
 /**************************************/
 
-var $container = $('#container');
-// initialize
-$container.masonry({
-  columnWidth: 200,
-  gutter: 10,
-  "isFitWidth": true,
-  itemSelector: '.item'
+// init Isotope
+var $container = $('#container').isotope({
+  // options
+  itemSelector: '.item',
+  getSortData: {
+    name: '.name',
+    category: '[data-category]'
+  },
+  // layout mode options
+  masonry: {
+    columnWidth: 200,
+    gutter: 10,
+    "isFitWidth": true
+  }
 });
+
+// filter items on button click
+$('#filters').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $container.isotope({ filter: filterValue });
+});
+/**************************************/
+/* MASONRY JS
+/**************************************/
 
 var $gallery = $('#gallery');
 $gallery.masonry({
