@@ -36,6 +36,10 @@
 	width: 25px;
 }
 
+.sm-url:hover {
+	background-color: rgba(0,0,0,0);
+}
+
 .footer {
 	clear: both;
 	height: 20px;
@@ -58,10 +62,6 @@
 			display: inline;
 			padding: 0px 10px;
 			border-bottom: none;
-		}
-
-		.sm:hover {
-			background-color: none;
 		}
 	}
 }
@@ -91,10 +91,6 @@
 			display: inline;
 			padding: 0px 2px;
 			border-bottom: none;
-		}
-
-		.sm:hover {
-			background-color: none;
 		}
   }
 
