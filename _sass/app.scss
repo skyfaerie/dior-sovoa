@@ -166,13 +166,6 @@ section {
 	}
 }
 
-
-/* #fit-width .masonry {
-  margin: 0 auto;
-}
- */
-
-
 ////// MOTION PAGE SPECIFIC /////
 
 #inmotion {
@@ -197,41 +190,21 @@ section {
 
 /* masonry */
 
-
-/* masonry */
-
 #gallery {
+	display: block;
 	margin: 0 auto;
 	margin-bottom: 10px;
-	padding-left: 40px;
-	// background-color: #ccc
+	padding-left: 7%; /* 40px; */
 }
 
 .picture {
-	width: 150px;
-	height: 150px;
+	max-width: 150px;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: -3px;
 }
 
 #fit-width .masonry {
   margin: 0 auto;
-}
-
-/* filter */
-
-#filter {
-	display: none;
-	// display: inline-block;
-	margin-left: 5px;
-}
-
-.filter {
-	display: inline-block;
-	text-align: center;
-	width: 100px;
-	padding: 5px;
-	margin-left: 5px;
 }
 
 ////// CONTACT PAGE SPECIFIC /////

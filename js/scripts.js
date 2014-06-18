@@ -42,11 +42,17 @@ $('#filters').on( 'click', 'button', function() {
 /* MASONRY JS
 /**************************************/
 
-var $gallery = $('#gallery');
-$gallery.masonry({
-  columnWidth: 100,
-  gutter: 20,
-  "isFitWidth": true,
-  itemSelector: '.picture'
+var $container = $('#gallery').masonry();
+// layout Masonry again after all images have loaded
+$container.imagesLoaded( function() {
+  $container.masonry();
 });
+
+// var $gallery = $('#gallery');
+// $gallery.masonry({
+//   // columnWidth: 100,
+//   // gutter: 20,
+//   // "isFitWidth": true,
+//   itemSelector: '.picture'
+// });
 

@@ -513,64 +513,44 @@ section {
   color: #333;
 }
 
-/* #fit-width .masonry {
-  margin: 0 auto;
-}
- */
-/* line 182, ../_sass/app.scss */
+/* line 175, ../_sass/app.scss */
 .article {
   padding-bottom: 15px;
 }
-/* line 184, ../_sass/app.scss */
+/* line 177, ../_sass/app.scss */
 .article a {
   display: block;
   padding-bottom: 5px;
 }
 
-/* line 192, ../_sass/app.scss */
+/* line 185, ../_sass/app.scss */
 .art-logo {
   vertical-align: middle;
 }
 
 /* masonry */
-/* masonry */
-/* line 203, ../_sass/app.scss */
+/* line 193, ../_sass/app.scss */
 #gallery {
+  display: block;
   margin: 0 auto;
   margin-bottom: 10px;
-  padding-left: 40px;
+  padding-left: 7%;
+  /* 40px; */
 }
 
-/* line 210, ../_sass/app.scss */
+/* line 200, ../_sass/app.scss */
 .picture {
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: -3px;
 }
 
-/* line 217, ../_sass/app.scss */
+/* line 206, ../_sass/app.scss */
 #fit-width .masonry {
   margin: 0 auto;
 }
 
-/* filter */
-/* line 223, ../_sass/app.scss */
-#filter {
-  display: none;
-  margin-left: 5px;
-}
-
-/* line 229, ../_sass/app.scss */
-.filter {
-  display: inline-block;
-  text-align: center;
-  width: 100px;
-  padding: 5px;
-  margin-left: 5px;
-}
-
-/* line 240, ../_sass/app.scss */
+/* line 213, ../_sass/app.scss */
 .details, .form-wrap {
   display: inline;
   float: left;
@@ -578,12 +558,12 @@ section {
   margin: 0 1.04167%;
 }
 
-/* line 244, ../_sass/app.scss */
+/* line 217, ../_sass/app.scss */
 .details {
   padding-bottom: 15px;
 }
 
-/* line 248, ../_sass/app.scss */
+/* line 221, ../_sass/app.scss */
 form {
   padding: 10px 15px;
   max-width: 100%;
@@ -591,29 +571,29 @@ form {
   margin-bottom: 10px;
 }
 
-/* line 255, ../_sass/app.scss */
+/* line 228, ../_sass/app.scss */
 .field-row {
   margin: 10px 0px;
 }
-/* line 258, ../_sass/app.scss */
+/* line 231, ../_sass/app.scss */
 .field-row label {
   display: inline-block;
   padding-top: 8px;
   width: 100%;
 }
-/* line 264, ../_sass/app.scss */
+/* line 237, ../_sass/app.scss */
 .field-row input, .field-row textarea {
   width: 98%;
   padding: 10px 5px;
   margin-left: 2px;
 }
-/* line 270, ../_sass/app.scss */
+/* line 243, ../_sass/app.scss */
 .field-row textarea {
   min-height: 150px;
   margin-bottom: 10px;
 }
 
-/* line 276, ../_sass/app.scss */
+/* line 249, ../_sass/app.scss */
 #btn-submit {
   display: block;
   width: 102.08333%;
@@ -629,20 +609,20 @@ form {
 #btn-submit:after {
   clear: both;
 }
-/* line 279, ../_sass/app.scss */
+/* line 252, ../_sass/app.scss */
 #btn-submit #ss-submit {
   margin-left: 76.04167%;
   padding: 10px 15px;
 }
 
-/* line 285, ../_sass/app.scss */
+/* line 258, ../_sass/app.scss */
 #thanks {
   padding-top: 10px;
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 291, ../_sass/app.scss */
+  /* line 264, ../_sass/app.scss */
   .details {
     display: inline;
     float: left;
@@ -650,7 +630,7 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 295, ../_sass/app.scss */
+  /* line 268, ../_sass/app.scss */
   .form-wrap {
     display: inline;
     float: left;
@@ -658,16 +638,16 @@ form {
     margin: 0 1.04167%;
   }
 
-  /* line 299, ../_sass/app.scss */
+  /* line 272, ../_sass/app.scss */
   form {
     max-width: 75%;
   }
 
-  /* line 304, ../_sass/app.scss */
+  /* line 277, ../_sass/app.scss */
   .field-row label {
     width: 24%;
   }
-  /* line 308, ../_sass/app.scss */
+  /* line 281, ../_sass/app.scss */
   .field-row input, .field-row textarea {
     width: 70%;
   }
