@@ -615,12 +615,7 @@ img {
   text-align: center;
 }
 
-/***********queries from bootstrap ***************
-  @media (min-width:992px)
-  @media (max-width:991px) and (min-width: 768px)
-  @media screen and (max-width: 768px)
-**************************************************/
-/* line 13, ../_sass/home.scss */
+/* line 7, ../_sass/home.scss */
 body {
   display: inline-block;
   width: 100%;
@@ -630,60 +625,25 @@ body {
   background-repeat: repeat-y;
 }
 
-/* line 22, ../_sass/home.scss */
+/* line 16, ../_sass/home.scss */
 #menu {
-  position: relative;
   display: block;
   padding: 0px 5px;
-  margin-bottom: -32px;
 }
 
-/* line 29, ../_sass/home.scss */
+/* line 21, ../_sass/home.scss */
 header {
   background: transparent;
 }
 
-/* line 35, ../_sass/home.scss */
-.logo-wrapper {
-  height: 100%;
-  width: 100%;
-}
-
-/* line 40, ../_sass/home.scss */
-.logo {
-  display: block;
-  margin: 0 auto;
-  margin-left: 11.8%;
-  max-width: 85%;
-  margin-top: 30%;
-}
-
-/* line 48, ../_sass/home.scss */
-.footer {
-  position: absolute;
-  right: 20px;
-  bottom: 5px;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-/* line 55, ../_sass/home.scss */
-#sm-wrapper {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-/* line 60, ../_sass/home.scss */
-.sm {
-  width: 30px;
-}
-
 @media (min-width: 768px) {
-  /* line 65, ../_sass/home.scss */
+  /* line 24, ../_sass/home.scss */
   nav {
     display: block;
-    padding: 10px 5px;
+    padding: 10px 0px;
     text-align: right;
   }
-  /* line 69, ../_sass/home.scss */
+  /* line 28, ../_sass/home.scss */
   nav a {
     width: auto;
     display: inline-block;
@@ -692,13 +652,41 @@ header {
     padding: 10px 15px;
   }
 
-  /* line 78, ../_sass/home.scss */
+  /* line 37, ../_sass/home.scss */
   .logo {
-    margin-top: 3%;
+    top: 10%;
   }
 
-  /* line 82, ../_sass/home.scss */
+  /* line 41, ../_sass/home.scss */
   #menu {
     display: none;
   }
+}
+/* line 46, ../_sass/home.scss */
+.logo {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 8.6%;
+  bottom: 0;
+  right: 0;
+  max-width: 85%;
+  z-index: -1;
+}
+
+/* line 57, ../_sass/home.scss */
+#sm-wrapper {
+  background: transparent;
+}
+/* line 60, ../_sass/home.scss */
+#sm-wrapper .sm {
+  width: 30px;
+  height: 30px;
+}
+
+/* line 66, ../_sass/home.scss */
+.footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }

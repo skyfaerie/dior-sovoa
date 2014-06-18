@@ -4,12 +4,6 @@
 
 ////// HOME PAGE SPECIFIC /////
 
-/***********queries from bootstrap ***************
-  @media (min-width:992px)
-  @media (max-width:991px) and (min-width: 768px)
-  @media screen and (max-width: 768px)
-**************************************************/
-
 body {
   display: inline-block;
   width: 100%;
@@ -20,51 +14,16 @@ body {
 }
 
 #menu {
-  position: relative;
   display: block;
   padding: 0px 5px;
-  margin-bottom: -32px;
 }
 
 header { background: transparent; }
 
-.content {
- // position: absolute;
-}
-
-.logo-wrapper {
-  height: 100%;
-  width: 100%;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto;
-  margin-left: 11.8%;
-  max-width: 85%;
-  margin-top: 30%;
-}
-
-.footer {
-  position: absolute;
-  right: 20px;
-  bottom: 5px;
-  background-color: rgba(0,0,0,0);
-}
-
-#sm-wrapper {
-  background-color: rgba(0,0,0,0);
-}
-
-
-.sm {
-  width: 30px;
-}
-
 @media(min-width: 768px) {
   nav {
     display: block;
-    padding: 10px 5px;
+    padding: 10px 0px;
     text-align: right;
     a {
       width: auto;
@@ -76,10 +35,36 @@ header { background: transparent; }
   }
 
   .logo {
-    margin-top: 3%;
+    top: 10%;
   }
 
   #menu {
     display: none;
   }
+}
+
+.logo {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 8.6%;
+  bottom: 0;
+  right: 0;
+  max-width: 85%;
+  z-index: -1;
+}
+
+#sm-wrapper {
+  background: transparent;
+
+  .sm{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
