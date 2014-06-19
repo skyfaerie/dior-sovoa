@@ -637,13 +637,13 @@ header {
 }
 
 @media (min-width: 768px) {
-  /* line 24, ../_sass/home.scss */
+  /* line 26, ../_sass/home.scss */
   nav {
     display: block;
     padding: 10px 0px;
     text-align: right;
   }
-  /* line 28, ../_sass/home.scss */
+  /* line 31, ../_sass/home.scss */
   nav a {
     width: auto;
     display: inline-block;
@@ -652,21 +652,17 @@ header {
     padding: 10px 15px;
   }
 
-  /* line 37, ../_sass/home.scss */
+  /* line 40, ../_sass/home.scss */
   .logo {
     top: 10%;
+    margin-top: 50px;
   }
 
-  /* line 41, ../_sass/home.scss */
+  /* line 45, ../_sass/home.scss */
   #menu {
     display: none;
   }
 }
-/* line 46, ../_sass/home.scss */
-#logo-wrapper {
-  z-index: 1000;
-}
-
 /* line 50, ../_sass/home.scss */
 .logo {
   margin: auto;
@@ -676,6 +672,7 @@ header {
   bottom: 0;
   right: 0;
   max-width: 85%;
+  max-height: 100%;
 }
 
 /* line 61, ../_sass/home.scss */

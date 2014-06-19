@@ -18,13 +18,16 @@ body {
   padding: 0px 5px;
 }
 
-header { background: transparent; }
+header {
+  background: transparent;
+}
 
 @media(min-width: 768px) {
   nav {
     display: block;
     padding: 10px 0px;
     text-align: right;
+
     a {
       width: auto;
       display: inline-block;
@@ -36,15 +39,12 @@ header { background: transparent; }
 
   .logo {
     top: 10%;
+    margin-top: 50px;
   }
 
   #menu {
     display: none;
   }
-}
-
-#logo-wrapper {
-  z-index: 1000;
 }
 
 .logo {
@@ -55,7 +55,7 @@ header { background: transparent; }
   bottom: 0;
   right: 0;
   max-width: 85%;
-  // z-index: 0;
+  max-height: 100%;
 }
 
 #sm-wrapper {
