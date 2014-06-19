@@ -663,6 +663,11 @@ header {
   }
 }
 /* line 46, ../_sass/home.scss */
+#logo-wrapper {
+  z-index: 1000;
+}
+
+/* line 50, ../_sass/home.scss */
 .logo {
   margin: auto;
   position: absolute;
@@ -671,20 +676,19 @@ header {
   bottom: 0;
   right: 0;
   max-width: 85%;
-  z-index: -1;
 }
 
-/* line 57, ../_sass/home.scss */
+/* line 61, ../_sass/home.scss */
 #sm-wrapper {
   background: transparent;
 }
-/* line 60, ../_sass/home.scss */
+/* line 64, ../_sass/home.scss */
 #sm-wrapper .sm {
   width: 30px;
   height: 30px;
 }
 
-/* line 66, ../_sass/home.scss */
+/* line 70, ../_sass/home.scss */
 .footer {
   position: absolute;
   right: 10px;

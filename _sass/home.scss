@@ -43,6 +43,10 @@ header { background: transparent; }
   }
 }
 
+#logo-wrapper {
+  z-index: 1000;
+}
+
 .logo {
   margin: auto;
   position: absolute;
@@ -51,7 +55,7 @@ header { background: transparent; }
   bottom: 0;
   right: 0;
   max-width: 85%;
-  z-index: -1;
+  // z-index: 0;
 }
 
 #sm-wrapper {
