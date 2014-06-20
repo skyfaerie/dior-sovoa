@@ -22,6 +22,12 @@ header {
   background: transparent;
 }
 
+#logo-wrapper {
+  max-width: 75% !important;
+  margin: 0 auto;
+  margin-left: 16.3%;
+}
+
 @media(min-width: 768px) {
   nav {
     display: block;
@@ -37,25 +43,9 @@ header {
     }
   }
 
-  .logo {
-    top: 10%;
-    margin-top: 50px;
-  }
-
   #menu {
     display: none;
   }
-}
-
-.logo {
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 8.6%;
-  bottom: 0;
-  right: 0;
-  max-width: 85%;
-  max-height: 100%;
 }
 
 #sm-wrapper {
