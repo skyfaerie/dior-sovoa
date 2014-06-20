@@ -34,7 +34,7 @@ var $container = $('#container').isotope({
 });
 
 // filter items on button click
-$('#filters').on( 'click', 'button', function() {
+$('#filters button').on( 'click', function() {
   var filterValue = $(this).attr('data-filter');
   $container.isotope({ filter: filterValue });
 });
@@ -42,10 +42,10 @@ $('#filters').on( 'click', 'button', function() {
 /* MASONRY JS
 /**************************************/
 
-var $container = $('#gallery').masonry();
-// layout Masonry again after all images have loaded
-$container.imagesLoaded( function() {
-  $container.masonry();
+var $container2 = $('#gallery').masonry();
+// layout Maso2nry again after all images have loaded
+$container2.imagesLoaded( function() {
+  $container2.masonry();
 });
 
 // var $gallery = $('#gallery');
