@@ -1,0 +1,291 @@
+@import "singularitygs";
+@import "compass/reset";
+@import "variables";
+// @import "_mixins";
+@import "color";
+@import "base";
+
+
+/* shared styles */
+
+body {
+	background: url("../img/backgrounds/bg.png") repeat fixed center;
+	// @include background-grid($color: blue);
+}
+
+.header {
+	@include grid-span(16, 1);
+
+  display: block;
+  max-width: 100%;
+  padding-bottom: 25px;
+
+  .logo {
+  	display: block;
+  	margin: 0 auto;
+  }
+
+  .line {
+  	margin-top: -25px;
+  	border-bottom: 1px solid $darkgray;
+  }
+
+  #menu {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	width: 40px;
+		height: 25px;
+  	margin: 5px 5px 0px 0px;
+  	border: 2px solid $gray;
+  	border-radius: 8px;
+  	padding-top: 7px;
+  }
+
+  .bar {
+  	width: 28px;
+		height: 2px;
+		background-color: $gray;
+		margin: 0 auto;
+		margin-bottom: 5px;
+  }
+}
+
+nav {
+  display: none;
+  padding-top: 10px;
+  a {
+    display: block;
+    width: 100%;
+    padding: 12px 0px;
+    text-align: center;
+    border-bottom: 1px solid $darkgray;
+  }
+}
+
+.content {
+	@include grid-span(16, 1);
+}
+
+section {
+	padding: 8px;
+	text-align: justify;
+
+	h1 {
+		text-align: center;
+	}
+}
+
+.footer {
+	@include grid-span(16, 1);
+	width: 100%;
+	text-align: center;
+	background-color: $black;
+	color: $darkgray;
+	padding: 10px 0;
+
+	#sm-wrapper{
+		margin-bottom: 10px;
+
+		.sm-url {
+			img {
+				width: 30px;
+			}
+		}
+	}
+}
+
+/* CLASSES */
+
+// .black {
+//   color: $black;
+// }
+
+// .white {
+//   color: $white;
+// }
+
+// .gray {
+//   color: $gray;
+// }
+
+////// ABOUT PAGE SPECIFIC /////
+
+#about {
+	@include grid-span(14, 2);
+
+	.portrait {
+		padding: 5px 0;
+
+		img {
+			// max-width: 75%;
+			display: block;
+			margin: 0 auto;
+			padding-bottom: 25	px;
+		}
+	}
+}
+////// CLIENT PAGE SPECIFIC /////
+
+#clients {
+	@include grid-span(14, 2);
+
+ text-align: center;
+}
+
+/* isotope */
+
+#container {
+	margin: 0 auto;
+	padding-left: 40px;
+}
+
+.item {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.button-group {
+	margin: 0 auto;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	max-width: 90%;
+	text-align: center;
+
+	li { display: inline-block; }
+
+	button {
+		min-width: 125px;
+		padding: 10px 8px;
+		font-size: 0.8em;
+		font-weight: 700;
+		border: 2px solid #333;
+		border-radius: 5px;
+		color: #333;
+		background-color: #fff;
+		text-transform: uppercase;
+	}
+	button:hover {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+////// MOTION PAGE SPECIFIC /////
+
+#inmotion {
+	@include grid-span(14, 2);
+}
+
+.article {
+
+	a {
+		display:block;
+		padding-bottom: 5px;
+	}
+
+	padding-bottom: 15px;
+}
+
+.art-logo {
+	vertical-align: middle;
+}
+
+////// GALLERY PAGE SPECIFIC /////
+
+/* masonry */
+
+#page-gallery{
+  @include grid-span(14, 2);
+}
+
+#gallery {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-left: 7%; /* 40px; */
+}
+
+.picture {
+	max-width: 150px;
+	margin: 0 auto;
+	margin-bottom: -3px;
+}
+
+#fit-width .masonry {
+  margin: 0 auto;
+}
+
+////// CONTACT PAGE SPECIFIC /////
+
+#contact {
+	@include grid-span(14, 2);
+}
+
+.details {
+	text-align: center;
+}
+
+.details {
+	padding-bottom: 15px;
+}
+
+form {
+	padding: 10px 15px;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.field-row {
+	margin: 10px 0px;
+
+	label {
+		display: inline-block;
+		padding-top: 8px;
+		width: 100%;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+
+	input, textarea {
+		width: 98%;
+		padding: 10px 5px;
+		margin-left: 2px;
+		border: 1px solid $gray;
+		border-radius: 6px;
+	}
+
+	textarea {
+		min-height: 150px;
+		margin: 10px 0;
+	}
+}
+
+#ss-submit {
+	width: 100%;
+	border: 1px solid darken($gray, 5%);
+	background-color: $gray;
+	color: $black;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 5px 0;
+
+	&:hover {
+		background-color: $black;
+		color: $white;
+	}
+}
+
+#thanks {
+	padding: 10px 0;
+	text-align: center;
+	font-weight: 500;
+	color: green;
+	font-size: 1em;
+	display: none;
+}
+

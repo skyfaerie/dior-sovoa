@@ -1,12 +1,4 @@
-
-@import "compass/reset";
-@import "breakpoint";
-@import "grid";
-@import "typography";
-
-////// GENERAL STYLING /////
-
-/* element Styles */
+/* BASE STYLES */
 
 html {
   width: 100%;
@@ -14,36 +6,69 @@ html {
 }
 
 body {
+  $grids: 16;
+  $gutters: 1/3;
+  font-family: $font-sans-body;
+  font-size: 16px;
+  color: $black;
   width: 100%;
   height: 100%;
+  background-color: $white;
 }
 
-nav {
-  display: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sans-header;
+}
 
-  a {
-    display: block;
-    width: 100%;
-    padding: 10px 0px;
+h1 {
+  font-size: 1.963em;
+  line-height: 2.618em;
+}
+
+h2 {
+  font-size: 1.618em;
+  line-height: 1.963em;
+}
+
+h3 {
+  font-size: 1.214em;
+  line-height: 1.618em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.214em;
+}
+
+h5 {
+  font-size: 0.75em;
+  line-height: 1em;
+}
+
+h6 {
+  font-size:  0.618em;
+  line-height: 0.75em;
+}
+
+p {
+  font-family: $font-sans-body;
+  font-size: 1.1em;
+  line-height: 1.214em;
+  margin-bottom: 0.618em;
+}
+
+a {
+  text-decoration: none;
+  color: $gray;
+  &:hover{
+    color: $gray; //lighten later
   }
-
-  .sm-url { display: none; }
 }
 
-header {
-  display: block;
-  max-width: 100%;
+li {
+  list-style-type: none;
 }
-
-/////////
-
 
 img  {
-	max-width: 100%;
+  max-width: 100%;
 }
-
-.footer {
-	text-align: center;
-}
-
-

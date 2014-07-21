@@ -1,6 +1,8 @@
 require 'sass'
 require 'compass'
-require 'breakpoint'
+# require 'breakpoint'
+require 'singularitygs'
+
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
