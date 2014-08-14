@@ -14,22 +14,56 @@ body {
 	background-image: url("../img/backgrounds/half-white.png"), url("../img/backgrounds/black.jpg");
 	background-size: 100%;
 	background-repeat: repeat-y;
+  text-align: center;
 }
 
 #menu {
-  display: block;
-  padding: 0px 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 25px;
+  margin: 5px 5px 0px 0px;
+  border: 2px solid $gray;
+  border-radius: 8px;
+  padding-top: 7px;
+}
+
+.bar {
+  width: 28px;
+  height: 2px;
+  background-color: $gray;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
 
 header {
   background: transparent;
 }
 
+#title {
+  font-size: 2em;
+  font-weight: 700;
+  font-style: bold;
+
+  #image { color: $black; }
+  #consultant { color: $purewhite; }
+}
+
+#sm-wrapper {
+  background: transparent;
+
+  .sm{
+    width: 30px;
+    height: 30px;
+  }
+}
+
 @media(min-width: 768px) {
   nav {
     display: block;
     padding: 10px 0px;
-    text-align: right;
+    // text-align: right;
 
     a {
       width: auto;
@@ -45,64 +79,52 @@ header {
   }
 }
 
-@media(min-width: 1200px) {
-  #logo-wrapper {
-    margin-top: 0;
-  }
-}
-
-@media(max-width: 1199px) {
-  #logo-wrapper {
-    margin-top: 5%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #logo-wrapper {
-    margin-top: 16%;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  #logo-wrapper {
-    margin-top: 24%;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  #logo-wrapper {
-    margin-top: 28%;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  #logo-wrapper {
-    margin-top: 30%;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  #logo-wrapper {
-    margin-top: 46%;
-  }
-}
-
 #logo-wrapper {
   max-width: 75% !important;
   margin-left: 16.3%;
 }
 
-#sm-wrapper {
-  background: transparent;
+// @media(min-width: 1200px) {
+//   #logo-wrapper {
+//     margin-top: 0;
+//   }
+// }
 
-  .sm{
-    width: 30px;
-    height: 30px;
-  }
-}
+// @media(max-width: 1199px) {
+//   #logo-wrapper {
+//     margin-top: 5%;
+//   }
+// }
 
-.footer {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
+// @media screen and (max-width: 768px) {
+//   #logo-wrapper {
+//     margin-top: 16%;
+//   }
+// }
+
+// @media screen and (max-width: 620px) {
+//   #logo-wrapper {
+//     margin-top: 24%;
+//   }
+// }
+
+// @media screen and (max-width: 568px) {
+//   #logo-wrapper {
+//     margin-top: 28%;
+//   }
+// }
+
+// @media screen and (max-width: 490px) {
+//   #logo-wrapper {
+//     margin-top: 30%;
+//   }
+// }
+
+// @media screen and (max-width: 420px) {
+//   #logo-wrapper {
+//     margin-top: 46%;
+//   }
+// }
+
+
+
